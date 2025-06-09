@@ -1,0 +1,12 @@
+# Testing
+
+## Levels of Testing
+
+Software testing is typically structured in the following levels:
+
+| Level             | Purpose                                                                                         | Benefits                                                                                                              | Key Characteristics                                                                                                                                                     |
+|-------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Unit Tests        | Test individual software components in isolation                                                | - Early bug detection  <br /> - Safe refactoring  <br /> - Encourages modular design                                  | - Readable names  <br /> - Fast execution  <br /> - Isolated from external dependencies  <br /> - Repeatable tests produce the same result every time they are executed |
+| Integration Tests | Test interactions between software components to ensure they work together correctly            | - Detects interface issues  <br /> - Verifies data/control flow between components                                    | - Built incrementally from unit-tested parts  <br /> - Focused on interactions  <br /> - Based on test plans                                                            |
+| System Tests      | Test the complete integrated system to ensure it meets its requirements and functions correctly | - Verifies overall functionality  <br /> - Catches system-wide issues  <br /> - Validates non-functional requirements | - End-to-end coverage  <br /> - Tests external behavior  <br /> - Driven by system specifications                                                                       |
+| Acceptance Tests  | Confirm the system meets business or contractual requirements                                   | - Validates business value  <br /> - Final approval before release                                                    | - Performed by users or stakeholders  <br /> - Based on acceptance criteria  <br /> - Reflects real-world use                                                           |

@@ -1,0 +1,748 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-groovy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-none.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script><style>
+        .article {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        
+
+        .bordered-element-rounded {
+            border: 1px solid #c4c4c4;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        
+
+        .code-block {
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            border-radius: 8px;
+            font-variant-ligatures: none;
+            background-color: rgba(25, 25, 28, .05);
+            word-break: break-all;
+        }
+        
+
+        .control {
+            color: #19191c;
+            font-size: 16px;
+            font-weight: 670;
+        }
+        
+
+        .detached {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-bottom: 8px;
+        }
+        
+
+        .emphasis {
+            color: inherit;
+            font-weight: inherit;
+            font-style: italic;
+        }
+        
+
+        .flex {
+            display: flex;
+        }
+        
+
+        .header-row {
+            background: #e6e6e6;
+        }
+        
+
+        .inline-code {
+            border-radius: 4px;
+            display: inline;
+            padding: 2px 1px;
+            font-family: JetBrains Sans,monospace;
+            background: #e6e6e6;
+        }
+        
+
+        .list {
+            list-style-type: disc;
+            padding-left: 0;
+            margin-left: 15px;
+        }
+        
+
+        .list-decimal {
+            list-style-type: decimal;
+        }
+        
+
+        .list-item {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 4px;
+        }
+        
+
+        .main-title {
+            padding-bottom: 24px;
+            margin-top: 0;
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prism {
+            page-break-inside: avoid;
+        }
+        
+        /* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=highlight-keywords */
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre-wrap;word-spacing:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:16px;margin:0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+
+        
+
+        .prompt {
+            flex-direction: row;
+            letter-spacing: .0015em;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+
+        .prompt-content {
+            padding: 15px;
+            overflow: hidden;
+            flex: 1 1 auto;
+        }
+        
+
+        .prompt-content-p p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prompt-icon {
+            flex: 0 0 auto;
+            margin-left: 15px;
+            margin-top: 15px;
+            fill: currentcolor;
+            width: 24px;
+            height: 24px;
+        }
+        
+
+        :root {
+            width: 95%;
+            max-width: 95vw;
+            padding: 0 0 0 30px;
+        }
+        
+        body {
+            font-family: JetBrains Sans,serif;
+        }
+        
+        a {
+            overflow-wrap: anywhere;
+            width: 100vw;
+        }
+        
+        
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff) format("woff");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff) format("woff");
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        
+        code {
+            display: inline;
+            word-break: break-word;
+            font-size: 15px;
+            line-height: inherit;
+            font-variant-ligatures: none;
+            font-family: JetBrains Sans,monospace;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+        }
+        
+        figcaption {
+            margin-top: 5px;
+        }
+        
+        h2 {
+            padding-top: 16px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h3 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h4 {
+            padding-top: 4px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        p {
+            padding: 0;
+            border: 0;
+            line-height: 25px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-bottom: 8px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-inside: avoid;
+        }
+        
+        th, td {
+            border: 1px solid #c4c4c4;
+            padding: 10px;
+            text-align: left;
+            word-break: break-all;
+        }
+        
+        .no-bold {
+            font-weight: normal; 
+        }
+        
+        .entry {
+            display: grid;
+            grid-template-columns: auto max-content;
+            grid-template-areas: "chapter page";
+            align-items: end;
+            gap: 0 .25rem;
+            line-height: 25px;
+        }
+        
+        .toc-link-container{
+            grid-area: chapter;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .toc-link{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .toc-link-container::after {
+            position: absolute;
+            padding-left: .25ch;
+            content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+            text-align: right;
+        }
+        
+        .page {
+            grid-area: page;
+            width: 30px;
+            text-align: right;
+        }
+        
+
+        .table-wrapper {
+            overflow: hidden;
+            box-sizing: border-box;
+            font: inherit;
+        }
+        
+
+        .tip {
+            background-color: rgba(25, 25, 28, .05);
+        }
+        
+
+        .topic {
+            page-break-before: always;
+        }
+        </style><title>pdfSourceNOTES-DEV</title></head><body><div><section class="topic"><div><article class="article"><h1 class="main-title">Table of Contents</h1><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1703914554">Introduction</a></div><div class="page">2</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#810443853">Behavior-Driven Development</a></div><div class="page">3</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1811812819">Spring</a></div><div class="page">5</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1100003378">Hibernate</a></div><div class="page">12</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#242207216">Testing</a></div><div class="page">18</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#218867793">Testing Java Applications</a></div><div class="page">19</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#671578280">Integration Tests</a></div><div class="page">28</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#563116399">End-to-End Tests</a></div><div class="page">32</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-991381940">Software Requirements Specification</a></div><div class="page">34</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#2716327">YAML</a></div><div class="page">36</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#569230577">Keycloak</a></div><div class="page">39</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#401446718">OpenSSH</a></div><div class="page">45</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#2052348480">Docker</a></div><div class="page">49</div></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1703914554">Introduction</h1></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="810443853">Behavior-Driven Development</h1><p id="810443853#ab7ma1_3">Behavior-Driven Development (BDD) is an Agile software development methodology that promotes collaboration between business stakeholders, developers, and testers to ensure the software meets user needs. BDD emphasizes defining system behavior through examples written in a shared, human-readable format.</p><section class="detached"><h2 id="810443853#key-principles" data-toc="key-principles#Behavior-Driven-Development.md-key-principles">Key Principles</h2><ul class="list" id="810443853#ab7ma1_7" start="1"><li class="list-item" id="810443853#ab7ma1_8"><p id="810443853#ab7ma1_11">Define behavior through <span class="control" id="810443853#ab7ma1_12">collaborative conversations</span></p></li><li class="list-item" id="810443853#ab7ma1_9"><p id="810443853#ab7ma1_13">Use a <span class="control" id="810443853#ab7ma1_14">shared language</span> (often Gherkin) to write scenarios</p></li><li class="list-item" id="810443853#ab7ma1_10"><p id="810443853#ab7ma1_15">Treat these scenarios as <span class="control" id="810443853#ab7ma1_16">living documentation</span> and <span class="control" id="810443853#ab7ma1_17">automated tests</span></p></li></ul></section><section class="detached"><h2 id="810443853#typical-bdd-process" data-toc="typical-bdd-process#Behavior-Driven-Development.md-typical-bdd-process">Typical BDD Process</h2><ol class="list list-decimal" id="810443853#ab7ma1_18" type="1" start="1"><li class="list-item" id="810443853#ab7ma1_20"><p id="810443853#ab7ma1_25"><span class="control" id="810443853#ab7ma1_26">Collaborative Specification</span>. Stakeholders (e.g., product owners, developers, testers) discuss expected behaviors using real examples and write scenarios in Gherkin format.</p></li><li class="list-item" id="810443853#ab7ma1_21"><p id="810443853#ab7ma1_27"><span class="control" id="810443853#ab7ma1_28">Automated Acceptance Testing</span>. Scenarios are automated using tools such as Cucumber and are integrated into the CI pipeline for continuous verification.</p></li><li class="list-item" id="810443853#ab7ma1_22"><p id="810443853#ab7ma1_29"><span class="control" id="810443853#ab7ma1_30">Development</span>. Developers implement features defined in scenarios. Automated tests are run frequently to ensure behavior remains consistent and regressions are caught early.</p></li><li class="list-item" id="810443853#ab7ma1_23"><p id="810443853#ab7ma1_31"><span class="control" id="810443853#ab7ma1_32">Review and Feedback</span>. Each iteration concludes with a stakeholder review. Scenarios may be updated to reflect changes or new understanding.</p></li><li class="list-item" id="810443853#ab7ma1_24"><p id="810443853#ab7ma1_33"><span class="control" id="810443853#ab7ma1_34">Repeat</span>. The cycle continues in later iterations.</p></li></ol><p id="810443853#ab7ma1_19">BDD integrates naturally with Scrum or other Agile frameworks.</p></section><section class="detached"><h2 id="810443853#references" data-toc="references#Behavior-Driven-Development.md-references">References</h2></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1811812819">Spring</h1><section class="detached"><h2 id="-1811812819#spring-context" data-toc="spring-context#Spring.md-spring-context">Spring Context</h2><p id="-1811812819#jlpcbr_8">The <span class="control" id="-1811812819#jlpcbr_11">Spring context</span> is a container that manages the lifecycle and dependencies of application components known as * <span class="emphasis" id="-1811812819#jlpcbr_12">beans</span>*. These beans are stored in memory and created, injected, and destroyed by Spring as needed.</p><p id="-1811812819#jlpcbr_9">Spring follows the <span class="control" id="-1811812819#jlpcbr_13">Inversion of Control (IoC)</span> principle, where the framework, not the developer, manages object creation and wiring. To benefit from Spring features, you need to tell Spring which objects to manage.</p></section><section class="detached"><h2 id="-1811812819#adding-beans-to-the-spring-context" data-toc="adding-beans-to-the-spring-context#Spring.md-adding-beans-to-the-spring-context">Adding Beans to the Spring Context</h2><p id="-1811812819#jlpcbr_14">Beans can be added to the Spring context in three main ways:</p><section class="detached"><h3 id="-1811812819#1-bean-annotation" data-toc="1-bean-annotation#Spring.md-1-bean-annotation">1. @Bean Annotation</h3><ul class="list" id="-1811812819#jlpcbr_19" start="1"><li class="list-item" id="-1811812819#jlpcbr_22"><p id="-1811812819#jlpcbr_27">Used in <span class="inline-code" id="-1811812819#jlpcbr_28">@Configuration</span> classes.</p></li><li class="list-item" id="-1811812819#jlpcbr_23"><p id="-1811812819#jlpcbr_29">Provides full control over instance creation and configuration.</p></li><li class="list-item" id="-1811812819#jlpcbr_24"><p id="-1811812819#jlpcbr_30">Can add any object type, even ones not defined in your application.</p></li><li class="list-item" id="-1811812819#jlpcbr_25"><p id="-1811812819#jlpcbr_31">Allows adding multiple beans of the same type.</p></li><li class="list-item" id="-1811812819#jlpcbr_26"><p id="-1811812819#jlpcbr_32">Requires writing a separate method for each bean (more boilerplate).</p></li></ul><div class="detached code-block" id="-1811812819#jlpcbr_20"><pre><code class="language-java">@Configuration
+public class ProjectConfig {
+
+    @Bean
+    public Parrot parrot() {
+        Parrot p = new Parrot();
+        p.setName(&quot;Koko&quot;);
+        return p;
+    }
+
+    @Bean
+    @Primary
+    public Parrot parrot2() {
+        Parrot p = new Parrot();
+        p.setName(&quot;Miki&quot;);
+        return p;
+    }
+
+    @Bean
+    public Person person() {
+        Person p = new Person();
+        p.setName(&quot;Ella&quot;);
+        p.setParrot(parrot());
+        return p;
+    }
+}</code></pre></div></section><section class="detached"><h3 id="-1811812819#2-stereotype-annotations-component-service-etc" data-toc="2-stereotype-annotations-component-service-etc#Spring.md-2-stereotype-annotations-component-service-etc">2. Stereotype Annotations (@Component, @Service, etc.)</h3><ul class="list" id="-1811812819#jlpcbr_34" start="1"><li class="list-item" id="-1811812819#jlpcbr_38"><p id="-1811812819#jlpcbr_43">Less boilerplate than <span class="inline-code" id="-1811812819#jlpcbr_44">@Bean</span>.</p></li><li class="list-item" id="-1811812819#jlpcbr_39"><p id="-1811812819#jlpcbr_45">Automatically picks up classes with stereotype annotations via <span class="inline-code" id="-1811812819#jlpcbr_46">@ComponentScan</span>.</p></li><li class="list-item" id="-1811812819#jlpcbr_40"><p id="-1811812819#jlpcbr_47">Only works with classes defined in your app.</p></li><li class="list-item" id="-1811812819#jlpcbr_41"><p id="-1811812819#jlpcbr_48">Only one instance of each class can be added.</p></li><li class="list-item" id="-1811812819#jlpcbr_42"><p id="-1811812819#jlpcbr_49">Limited control over instantiation.</p></li></ul><div class="detached code-block" id="-1811812819#jlpcbr_35"><pre><code class="language-java">@Component
+public class Parrot {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @PostConstruct
+    public void init() {
+        this.name = &quot;Kiki&quot;;
+    }
+}
+
+@Configuration
+@ComponentScan(basePackages = &quot;main&quot;)
+public class ProjectConfig {
+}</code></pre></div></section><section class="detached"><h3 id="-1811812819#3-programmatically-e-g-registerbean" data-toc="3-programmatically-e-g-registerbean#Spring.md-3-programmatically-e-g-registerbean">3. Programmatically (e.g., registerBean())</h3><ul class="list" id="-1811812819#jlpcbr_51" start="1"><li class="list-item" id="-1811812819#jlpcbr_55"><p id="-1811812819#jlpcbr_58">Available since Spring 5.</p></li><li class="list-item" id="-1811812819#jlpcbr_56"><p id="-1811812819#jlpcbr_59">Allows dynamic, custom registration logic.</p></li><li class="list-item" id="-1811812819#jlpcbr_57"><p id="-1811812819#jlpcbr_60">Useful for conditionally or externally defined beans.</p></li></ul><div class="detached code-block" id="-1811812819#jlpcbr_52"><pre><code class="language-java">public class Main {
+    public static void main(String[] args) {
+        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+
+        Parrot x = new Parrot();
+        x.setName(&quot;Kiki&quot;);
+
+        Supplier&lt;Parrot&gt; supplier = () -&gt; x;
+        context.registerBean(&quot;parrot1&quot;, Parrot.class, supplier);
+
+        Parrot p = context.getBean(Parrot.class);
+        System.out.println(p.getName());
+    }
+}</code></pre></div></section></section><section class="detached"><h2 id="-1811812819#wiring-beans-dependency-injection" data-toc="wiring-beans-dependency-injection#Spring.md-wiring-beans-dependency-injection">Wiring Beans (Dependency Injection)</h2><p id="-1811812819#jlpcbr_61">Spring uses <span class="control" id="-1811812819#jlpcbr_65">Dependency Injection (DI)</span> to wire beans together.</p><section class="detached"><h3 id="-1811812819#manual-wiring-method-calls" data-toc="manual-wiring-method-calls#Spring.md-manual-wiring-method-calls">Manual Wiring (Method Calls)</h3><div class="detached code-block" id="-1811812819#jlpcbr_66"><pre><code class="language-java">@Configuration
+public class ProjectConfig {
+    @Bean
+    public Parrot parrot() {
+        Parrot p = new Parrot();
+        p.setName(&quot;Koko&quot;);
+        return p;
+    }
+
+    @Bean
+    public Person person() {
+        Person p = new Person();
+        p.setName(&quot;Ella&quot;);
+        p.setParrot(parrot());
+        return p;
+    }
+}</code></pre></div></section><section class="detached"><h3 id="-1811812819#auto-wiring-method-parameters" data-toc="auto-wiring-method-parameters#Spring.md-auto-wiring-method-parameters">Auto-Wiring (Method Parameters)</h3><div class="detached code-block" id="-1811812819#jlpcbr_67"><pre><code class="language-java">@Configuration
+public class ProjectConfig {
+    @Bean
+    public Parrot parrot() {
+        Parrot p = new Parrot();
+        p.setName(&quot;Koko&quot;);
+        return p;
+    }
+
+    @Bean
+    public Person person(Parrot parrot) {
+        Person p = new Person();
+        p.setName(&quot;Ella&quot;);
+        p.setParrot(parrot);
+        return p;
+    }
+}</code></pre></div></section><section class="detached"><h3 id="-1811812819#using-autowired" data-toc="using-autowired#Spring.md-using-autowired">Using @Autowired</h3><ul class="list" id="-1811812819#jlpcbr_69" start="1"><li class="list-item" id="-1811812819#jlpcbr_73"><p id="-1811812819#jlpcbr_74">Inject via constructor (preferred), field (not recommended for production), or setter (rarely used).</p></li></ul><div class="detached code-block" id="-1811812819#jlpcbr_70"><pre><code class="language-java">@Component
+public class Person {
+    private String name = &quot;Ella&quot;;
+    private final Parrot parrot;
+
+    @Autowired
+    public Person(Parrot parrot) {
+        this.parrot = parrot;
+    }
+}</code></pre></div></section></section><section class="detached"><h2 id="-1811812819#bean-scopes-and-lifecycle" data-toc="bean-scopes-and-lifecycle#Spring.md-bean-scopes-and-lifecycle">Bean Scopes and Lifecycle</h2><p id="-1811812819#jlpcbr_75">Spring manages bean creation and lifecycle using <span class="control" id="-1811812819#jlpcbr_80">scopes</span>:</p><ul class="list" id="-1811812819#jlpcbr_76" start="1"><li class="list-item" id="-1811812819#jlpcbr_81"><p id="-1811812819#jlpcbr_86"><span class="control" id="-1811812819#jlpcbr_87">singleton</span> (default): one instance per context.</p></li><li class="list-item" id="-1811812819#jlpcbr_82"><p id="-1811812819#jlpcbr_88"><span class="control" id="-1811812819#jlpcbr_89">prototype</span>: new instance every time requested.</p></li><li class="list-item" id="-1811812819#jlpcbr_83"><p id="-1811812819#jlpcbr_90"><span class="control" id="-1811812819#jlpcbr_91">request</span>: one instance per HTTP request (<span class="inline-code" id="-1811812819#jlpcbr_92">@RequestScope</span>).</p></li><li class="list-item" id="-1811812819#jlpcbr_84"><p id="-1811812819#jlpcbr_93"><span class="control" id="-1811812819#jlpcbr_94">session</span>: one instance per HTTP session (<span class="inline-code" id="-1811812819#jlpcbr_95">@SessionScope</span>).</p></li><li class="list-item" id="-1811812819#jlpcbr_85"><p id="-1811812819#jlpcbr_96"><span class="control" id="-1811812819#jlpcbr_97">application</span>: one instance per application (<span class="inline-code" id="-1811812819#jlpcbr_98">@ApplicationScope</span>).</p></li></ul><p id="-1811812819#jlpcbr_77">To use custom scopes:</p><div class="detached code-block" id="-1811812819#jlpcbr_78"><pre><code class="language-java">@Scope(BeanDefinition.SCOPE_PROTOTYPE)
+@Bean
+public Parrot parrot() {
+    return new Parrot();
+}</code></pre></div></section><section class="detached"><h2 id="-1811812819#aspect-oriented-programming-aop" data-toc="aspect-oriented-programming-aop#Spring.md-aspect-oriented-programming-aop">Aspect-Oriented Programming (AOP)</h2><p id="-1811812819#jlpcbr_99"><span class="control" id="-1811812819#jlpcbr_102">Aspects</span> let you intercept method calls and inject logic (e.g., logging, security).</p><section class="detached"><h3 id="-1811812819#aop-concepts" data-toc="aop-concepts#Spring.md-aop-concepts">AOP Concepts</h3><ul class="list" id="-1811812819#jlpcbr_103" start="1"><li class="list-item" id="-1811812819#jlpcbr_105"><p id="-1811812819#jlpcbr_108"><span class="control" id="-1811812819#jlpcbr_109">Aspect</span>: logic to apply.</p></li><li class="list-item" id="-1811812819#jlpcbr_106"><p id="-1811812819#jlpcbr_110"><span class="control" id="-1811812819#jlpcbr_111">Advice</span>: when to apply it (before, after, around).</p></li><li class="list-item" id="-1811812819#jlpcbr_107"><p id="-1811812819#jlpcbr_112"><span class="control" id="-1811812819#jlpcbr_113">Pointcut</span>: which methods to apply it to.</p></li></ul><p id="-1811812819#jlpcbr_104">Spring uses <span class="control" id="-1811812819#jlpcbr_114">proxies</span> for weaving: instead of returning the original bean, Spring returns a proxy that wraps it with aspect logic.</p></section><section class="detached"><h3 id="-1811812819#steps-to-create-an-aspect" data-toc="steps-to-create-an-aspect#Spring.md-steps-to-create-an-aspect">Steps to Create an Aspect</h3><ol class="list list-decimal" id="-1811812819#jlpcbr_115" type="1" start="1"><li class="list-item" id="-1811812819#jlpcbr_121"><p id="-1811812819#jlpcbr_122">Enable AOP:</p></li></ol><div class="detached code-block" id="-1811812819#jlpcbr_116"><pre><code class="language-java">@Configuration
+@ComponentScan(basePackages = &quot;services&quot;)
+@EnableAspectJAutoProxy
+public class ProjectConfig {
+}</code></pre></div><ol class="list list-decimal" id="-1811812819#jlpcbr_117" type="1" start="2"><li class="list-item" id="-1811812819#jlpcbr_123"><p id="-1811812819#jlpcbr_124">Create an Aspect:</p></li></ol><div class="detached code-block" id="-1811812819#jlpcbr_118"><pre><code class="language-java">@Aspect
+@Component
+public class LoggingAspect {
+    @Around(&quot;execution(* services.*.*(..))&quot;)
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        String methodName = joinPoint.getSignature().getName();
+        Object[] args = joinPoint.getArgs();
+
+        // before method call
+        Object result = joinPoint.proceed();
+        // after method call
+
+        return result;
+    }
+}</code></pre></div><ol class="list list-decimal" id="-1811812819#jlpcbr_119" type="1" start="3"><li class="list-item" id="-1811812819#jlpcbr_125"><p id="-1811812819#jlpcbr_126">To define the order of multiple aspects:</p></li></ol><div class="detached code-block" id="-1811812819#jlpcbr_120"><pre><code class="language-java">@Aspect
+@Order(1)
+public class FirstAspect {
+}
+
+@Aspect
+@Order(2)
+public class SecondAspect {
+}</code></pre></div></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1100003378">Hibernate</h1><section class="detached"><h2 id="1100003378#configuration" data-toc="configuration#Hibernate.md-configuration">Configuration</h2><p id="1100003378#z3o2ymc_19">Hibernate is typically configured via an XML file named <span class="inline-code" id="1100003378#z3o2ymc_22">hibernate.cfg.xml</span>, located in the classpath:</p><div class="detached code-block" id="1100003378#z3o2ymc_20"><pre><code class="language-markup">&lt;hibernate-configuration&gt;
+    &lt;session-factory&gt;
+        &lt;property name=&quot;connection.driver_class&quot;&gt;org.h2.Driver&lt;/property&gt;
+        &lt;property name=&quot;connection.url&quot;&gt;jdbc:h2:./db1&lt;/property&gt;
+        &lt;property name=&quot;connection.username&quot;&gt;sa&lt;/property&gt;
+        &lt;property name=&quot;connection.password&quot;/&gt;
+        &lt;property name=&quot;dialect&quot;&gt;org.hibernate.dialect.H2Dialect&lt;/property&gt;
+        &lt;property name=&quot;show_sql&quot;&gt;true&lt;/property&gt;
+        &lt;property name=&quot;hbm2ddl.auto&quot;&gt;create-drop&lt;/property&gt;
+        &lt;mapping class=&quot;chapter01.hibernate.Message&quot;/&gt;
+    &lt;/session-factory&gt;
+&lt;/hibernate-configuration&gt;</code></pre></div><p id="1100003378#z3o2ymc_21">When using an application server or Spring, Hibernate can be integrated via resource injection or via configuration in the Spring context.</p></section><section class="detached"><h2 id="1100003378#integration-steps" data-toc="integration-steps#Hibernate.md-integration-steps">Integration Steps</h2><p id="1100003378#z3o2ymc_23">To apply Hibernate to a project:</p><ol class="list list-decimal" id="1100003378#z3o2ymc_24" type="1" start="1"><li class="list-item" id="1100003378#z3o2ymc_25"><p id="1100003378#z3o2ymc_30">Identify POJOs with database representation.</p></li><li class="list-item" id="1100003378#z3o2ymc_26"><p id="1100003378#z3o2ymc_31">Annotate POJOs to map fields to table columns.</p></li><li class="list-item" id="1100003378#z3o2ymc_27"><p id="1100003378#z3o2ymc_32">Add Hibernate and database driver dependencies.</p></li><li class="list-item" id="1100003378#z3o2ymc_28"><p id="1100003378#z3o2ymc_33">Configure <span class="inline-code" id="1100003378#z3o2ymc_34">hibernate.cfg.xml</span> or use Spring configuration.</p></li><li class="list-item" id="1100003378#z3o2ymc_29"><p id="1100003378#z3o2ymc_35">Create a <span class="inline-code" id="1100003378#z3o2ymc_36">SessionFactory</span> and use <span class="inline-code" id="1100003378#z3o2ymc_37">Session</span> objects for CRUD operations.</p></li></ol></section><section class="detached"><h2 id="1100003378#connection-pooling" data-toc="connection-pooling#Hibernate.md-connection-pooling">Connection Pooling</h2><p id="1100003378#z3o2ymc_38">Hibernate includes a basic connection pool, not suitable for production. In production:</p><ul class="list" id="1100003378#z3o2ymc_39" start="1"><li class="list-item" id="1100003378#z3o2ymc_41"><p id="1100003378#z3o2ymc_44">Use HikariCP (default in Spring Boot).</p></li><li class="list-item" id="1100003378#z3o2ymc_42"><p id="1100003378#z3o2ymc_45">Configure external pool via classpath or JNDI.</p></li><li class="list-item" id="1100003378#z3o2ymc_43"><p id="1100003378#z3o2ymc_46">Example dependency for HikariCP:</p></li></ul><div class="detached code-block" id="1100003378#z3o2ymc_40"><pre><code class="language-markup">&lt;dependency&gt;
+    &lt;groupId&gt;org.hibernate.orm&lt;/groupId&gt;
+    &lt;artifactId&gt;hibernate-hikaricp&lt;/artifactId&gt;
+    &lt;version&gt;${hibernate.core.version}&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></div></section><section class="detached"><h2 id="1100003378#entity-requirements" data-toc="entity-requirements#Hibernate.md-entity-requirements">Entity Requirements</h2><ul class="list" id="1100003378#z3o2ymc_47" start="1"><li class="list-item" id="1100003378#z3o2ymc_48"><p id="1100003378#z3o2ymc_50">Must have a <span class="inline-code" id="1100003378#z3o2ymc_51">public</span> or <span class="inline-code" id="1100003378#z3o2ymc_52">protected</span> no-arg constructor.</p></li><li class="list-item" id="1100003378#z3o2ymc_49"><p id="1100003378#z3o2ymc_53">Should not be <span class="inline-code" id="1100003378#z3o2ymc_54">final</span>.</p></li></ul></section><section class="detached"><h2 id="1100003378#jpa-annotations" data-toc="jpa-annotations#Hibernate.md-jpa-annotations">JPA Annotations</h2><ul class="list" id="1100003378#z3o2ymc_55" start="1"><li class="list-item" id="1100003378#z3o2ymc_56"><p id="1100003378#z3o2ymc_60"><span class="inline-code" id="1100003378#z3o2ymc_61">@Entity</span>: declares a class as an entity.</p></li><li class="list-item" id="1100003378#z3o2ymc_57"><p id="1100003378#z3o2ymc_62"><span class="inline-code" id="1100003378#z3o2ymc_63">@Id</span>: marks the primary key field.</p></li><li class="list-item" id="1100003378#z3o2ymc_58"><p id="1100003378#z3o2ymc_64"><span class="inline-code" id="1100003378#z3o2ymc_65">@GeneratedValue</span>: configures ID generation strategy.</p></li><li class="list-item" id="1100003378#z3o2ymc_59"><p id="1100003378#z3o2ymc_66"><span class="inline-code" id="1100003378#z3o2ymc_67">@Column</span>: customizes column mapping.</p></li></ul></section><section class="detached"><h2 id="1100003378#id-generation-strategies" data-toc="id-generation-strategies#Hibernate.md-id-generation-strategies">ID Generation Strategies</h2><ul class="list" id="1100003378#z3o2ymc_68" start="1"><li class="list-item" id="1100003378#z3o2ymc_70"><p id="1100003378#z3o2ymc_75"><span class="inline-code" id="1100003378#z3o2ymc_76">IDENTITY</span>: best for MySQL (auto-increment).</p></li><li class="list-item" id="1100003378#z3o2ymc_71"><p id="1100003378#z3o2ymc_77"><span class="inline-code" id="1100003378#z3o2ymc_78">SEQUENCE</span>: preferred (e.g., PostgreSQL, Oracle).</p></li><li class="list-item" id="1100003378#z3o2ymc_72"><p id="1100003378#z3o2ymc_79"><span class="inline-code" id="1100003378#z3o2ymc_80">TABLE</span>: slow, not recommended.</p></li><li class="list-item" id="1100003378#z3o2ymc_73"><p id="1100003378#z3o2ymc_81"><span class="inline-code" id="1100003378#z3o2ymc_82">AUTO</span>: delegates to provider.</p></li><li class="list-item" id="1100003378#z3o2ymc_74"><p id="1100003378#z3o2ymc_83"><span class="inline-code" id="1100003378#z3o2ymc_84">NONE</span>: requires manual assignment.</p></li></ul><div class="detached code-block" id="1100003378#z3o2ymc_69"><pre><code class="language-java">@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;</code></pre></div></section><section class="detached"><h2 id="1100003378#uuid-identifier" data-toc="uuid-identifier#Hibernate.md-uuid-identifier">UUID Identifier</h2><div class="detached code-block" id="1100003378#z3o2ymc_85"><pre><code class="language-java">@Id
+@GeneratedValue
+private UUID courseId;</code></pre></div></section><section class="detached"><h2 id="1100003378#custom-identifier-generator" data-toc="custom-identifier-generator#Hibernate.md-custom-identifier-generator">Custom Identifier Generator</h2><p id="1100003378#z3o2ymc_86">Use <span class="inline-code" id="1100003378#z3o2ymc_88">@GenericGenerator</span> and implement <span class="inline-code" id="1100003378#z3o2ymc_89">IdentifierGenerator</span>:</p><div class="detached code-block" id="1100003378#z3o2ymc_87"><pre><code class="language-java">@Id
+@GeneratedValue(generator = &quot;prod-generator&quot;)
+@GenericGenerator(
+        name = &quot;prod-generator&quot;,
+        strategy = &quot;com.example.MyGenerator&quot;,
+        parameters = @Parameter(name = &quot;prefix&quot;, value = &quot;prod&quot;)
+)
+private String prodId;</code></pre></div></section><section class="detached"><h2 id="1100003378#composite-identifiers" data-toc="composite-identifiers#Hibernate.md-composite-identifiers">Composite Identifiers</h2><section class="detached"><h3 id="1100003378#embeddedid" data-toc="embeddedid#Hibernate.md-embeddedid">@EmbeddedId</h3><div class="detached code-block" id="1100003378#z3o2ymc_93"><pre><code class="language-java">@Embeddable
+public class OrderEntryPK implements Serializable {
+    private long orderId;
+    private long productId;
+}
+
+@Entity
+public class OrderEntry {
+    @EmbeddedId
+    private OrderEntryPK entryId;
+}</code></pre></div></section><section class="detached"><h3 id="1100003378#idclass" data-toc="idclass#Hibernate.md-idclass">@IdClass</h3><div class="detached code-block" id="1100003378#z3o2ymc_96"><pre><code class="language-java">@Entity
+@IdClass(OrderEntryPK.class)
+public class OrderEntry {
+    @Id
+    private long orderId;
+    @Id
+    private long productId;
+}</code></pre></div></section></section><section class="detached"><h2 id="1100003378#derived-identifiers" data-toc="derived-identifiers#Hibernate.md-derived-identifiers">Derived Identifiers</h2><p id="1100003378#z3o2ymc_98">Use <span class="inline-code" id="1100003378#z3o2ymc_100">@MapsId</span> to derive one entity&rsquo;s ID from another:</p><div class="detached code-block" id="1100003378#z3o2ymc_99"><pre><code class="language-java">@Entity
+public class UserProfile {
+    @Id
+    private long profileId;
+
+    @OneToOne
+    @MapsId
+    private User user;
+}</code></pre></div></section><section class="detached"><h2 id="1100003378#persistence-context-states" data-toc="persistence-context-states#Hibernate.md-persistence-context-states">Persistence Context States</h2><ul class="list" id="1100003378#z3o2ymc_101" start="1"><li class="list-item" id="1100003378#z3o2ymc_102"><p id="1100003378#z3o2ymc_106"><span class="control" id="1100003378#z3o2ymc_107">Transient</span>: newly created, not associated with persistence context.</p></li><li class="list-item" id="1100003378#z3o2ymc_103"><p id="1100003378#z3o2ymc_108"><span class="control" id="1100003378#z3o2ymc_109">Persistent</span>: managed by session, tracked for changes.</p></li><li class="list-item" id="1100003378#z3o2ymc_104"><p id="1100003378#z3o2ymc_110"><span class="control" id="1100003378#z3o2ymc_111">Detached</span>: was persistent, but session closed or evicted.</p></li><li class="list-item" id="1100003378#z3o2ymc_105"><p id="1100003378#z3o2ymc_112"><span class="control" id="1100003378#z3o2ymc_113">Removed</span>: marked for deletion.</p></li></ul></section><section class="detached"><h2 id="1100003378#crud-and-session-methods" data-toc="crud-and-session-methods#Hibernate.md-crud-and-session-methods">CRUD and Session Methods</h2><ul class="list" id="1100003378#z3o2ymc_114" start="1"><li class="list-item" id="1100003378#z3o2ymc_115"><p id="1100003378#z3o2ymc_120"><span class="inline-code" id="1100003378#z3o2ymc_121">save()</span>, <span class="inline-code" id="1100003378#z3o2ymc_122">saveOrUpdate()</span>, <span class="inline-code" id="1100003378#z3o2ymc_123">update()</span></p></li><li class="list-item" id="1100003378#z3o2ymc_116"><p id="1100003378#z3o2ymc_124"><span class="inline-code" id="1100003378#z3o2ymc_125">get()</span> (returns null if not found), <span class="inline-code" id="1100003378#z3o2ymc_126">load()</span> (throws if not found)</p></li><li class="list-item" id="1100003378#z3o2ymc_117"><p id="1100003378#z3o2ymc_127"><span class="inline-code" id="1100003378#z3o2ymc_128">merge()</span>, <span class="inline-code" id="1100003378#z3o2ymc_129">refresh()</span></p></li><li class="list-item" id="1100003378#z3o2ymc_118"><p id="1100003378#z3o2ymc_130"><span class="inline-code" id="1100003378#z3o2ymc_131">delete()</span>, <span class="inline-code" id="1100003378#z3o2ymc_132">flush()</span></p></li><li class="list-item" id="1100003378#z3o2ymc_119"><p id="1100003378#z3o2ymc_133"><span class="inline-code" id="1100003378#z3o2ymc_134">isDirty()</span>: check if session has unflushed changes</p></li></ul></section><section class="detached"><h2 id="1100003378#transactions" data-toc="transactions#Hibernate.md-transactions">Transactions</h2><p id="1100003378#z3o2ymc_135">A transaction groups operations into a single atomic unit:</p><ul class="list" id="1100003378#z3o2ymc_136" start="1"><li class="list-item" id="1100003378#z3o2ymc_137"><p id="1100003378#z3o2ymc_139">Call <span class="inline-code" id="1100003378#z3o2ymc_140">commit()</span> to save changes.</p></li><li class="list-item" id="1100003378#z3o2ymc_138"><p id="1100003378#z3o2ymc_141">Use <span class="inline-code" id="1100003378#z3o2ymc_142">rollback()</span> to discard changes.</p></li></ul></section><section class="detached"><h2 id="1100003378#cascading" data-toc="cascading#Hibernate.md-cascading">Cascading</h2><p id="1100003378#z3o2ymc_143">Cascade options allow operations on one entity to propagate to related entities:</p><ul class="list" id="1100003378#z3o2ymc_144" start="1"><li class="list-item" id="1100003378#z3o2ymc_147"><p id="1100003378#z3o2ymc_153"><span class="inline-code" id="1100003378#z3o2ymc_154">PERSIST</span></p></li><li class="list-item" id="1100003378#z3o2ymc_148"><p id="1100003378#z3o2ymc_155"><span class="inline-code" id="1100003378#z3o2ymc_156">MERGE</span></p></li><li class="list-item" id="1100003378#z3o2ymc_149"><p id="1100003378#z3o2ymc_157"><span class="inline-code" id="1100003378#z3o2ymc_158">REFRESH</span></p></li><li class="list-item" id="1100003378#z3o2ymc_150"><p id="1100003378#z3o2ymc_159"><span class="inline-code" id="1100003378#z3o2ymc_160">REMOVE</span></p></li><li class="list-item" id="1100003378#z3o2ymc_151"><p id="1100003378#z3o2ymc_161"><span class="inline-code" id="1100003378#z3o2ymc_162">DETACH</span></p></li><li class="list-item" id="1100003378#z3o2ymc_152"><p id="1100003378#z3o2ymc_163"><span class="inline-code" id="1100003378#z3o2ymc_164">ALL</span></p></li></ul><p id="1100003378#z3o2ymc_145">Example:</p><div class="detached code-block" id="1100003378#z3o2ymc_146"><pre><code class="language-java">@OneToOne(cascade = {CascadeType.REFRESH, CascadeType.MERGE})
+private EntityType otherSide;</code></pre></div></section><section class="detached"><h2 id="1100003378#lazy-loading" data-toc="lazy-loading#Hibernate.md-lazy-loading">Lazy Loading</h2><p id="1100003378#z3o2ymc_165">Hibernate loads collections and associations lazily by default unless configured otherwise.</p></section><section class="detached"><h2 id="1100003378#references" data-toc="references#Hibernate.md-references">References</h2><ul class="list" id="1100003378#z3o2ymc_167" start="1"><li class="list-item" id="1100003378#z3o2ymc_168"><p id="1100003378#z3o2ymc_171">Hibernate 6 Documentation (<a href="https://hibernate.org/orm/documentation/6.0/">https://hibernate.org/orm/documentation/6.0/</a>)</p></li><li class="list-item" id="1100003378#z3o2ymc_169"><p id="1100003378#z3o2ymc_173">Spring Data JPA Reference (<a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/">https://docs.spring.io/spring-data/jpa/docs/current/reference/html/</a>)</p></li><li class="list-item" id="1100003378#z3o2ymc_170"><p id="1100003378#z3o2ymc_175">Baeldung: Hibernate Identifiers (<a href="https://www.baeldung.com/hibernate-identifiers">https://www.baeldung.com/hibernate-identifiers</a>)</p></li></ul></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="242207216">Testing</h1><section class="detached"><h2 id="242207216#levels-of-testing" data-toc="levels-of-testing#Testing.md-levels-of-testing">Levels of Testing</h2><p id="242207216#-f75u2i_4">Software testing is typically structured in the following levels:</p><div class="table-wrapper detached"><table id="242207216#-f75u2i_5"><tr class="header-row" id="242207216#-f75u2i_6"><th id="242207216#-f75u2i_11"><p>Level</p></th><th id="242207216#-f75u2i_12"><p>Purpose</p></th><th id="242207216#-f75u2i_13"><p>Benefits</p></th><th id="242207216#-f75u2i_14"><p>Key Characteristics</p></th></tr><tr class="" id="242207216#-f75u2i_7"><td id="242207216#-f75u2i_15"><p>Unit Tests</p></td><td id="242207216#-f75u2i_16"><p>Test individual software components in isolation</p></td><td id="242207216#-f75u2i_17"><p>- Early bug detection  - Safe refactoring  - Encourages modular design</p></td><td id="242207216#-f75u2i_18"><p>- Readable names  - Fast execution  - Isolated from external dependencies  - Repeatable tests produce the same result every time they are executed</p></td></tr><tr class="" id="242207216#-f75u2i_8"><td id="242207216#-f75u2i_24"><p>Integration Tests</p></td><td id="242207216#-f75u2i_25"><p>Test interactions between software components to ensure they work together correctly</p></td><td id="242207216#-f75u2i_26"><p>- Detects interface issues  - Verifies data/control flow between components</p></td><td id="242207216#-f75u2i_27"><p>- Built incrementally from unit-tested parts  - Focused on interactions  - Based on test plans</p></td></tr><tr class="" id="242207216#-f75u2i_9"><td id="242207216#-f75u2i_31"><p>System Tests</p></td><td id="242207216#-f75u2i_32"><p>Test the complete integrated system to ensure it meets its requirements and functions correctly</p></td><td id="242207216#-f75u2i_33"><p>- Verifies overall functionality  - Catches system-wide issues  - Validates non-functional requirements</p></td><td id="242207216#-f75u2i_34"><p>- End-to-end coverage  - Tests external behavior  - Driven by system specifications</p></td></tr><tr class="" id="242207216#-f75u2i_10"><td id="242207216#-f75u2i_39"><p>Acceptance Tests</p></td><td id="242207216#-f75u2i_40"><p>Confirm the system meets business or contractual requirements</p></td><td id="242207216#-f75u2i_41"><p>- Validates business value  - Final approval before release</p></td><td id="242207216#-f75u2i_42"><p>- Performed by users or stakeholders  - Based on acceptance criteria  - Reflects real-world use</p></td></tr></table></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="218867793">Testing Java Applications</h1><section class="detached"><h2 id="218867793#junit-5" data-toc="junit-5#Testing-Java-Applications.md-junit-5">JUnit 5</h2><p id="218867793#-z33eez_7">JUnit 5 is composed of three subprojects:</p><ul class="list" id="218867793#-z33eez_8" start="1"><li class="list-item" id="218867793#-z33eez_17"><p id="218867793#-z33eez_20"><span class="control" id="218867793#-z33eez_21">JUnit Platform</span> is responsible for launching testing frameworks on the JVM. It also provides a <span class="inline-code" id="218867793#-z33eez_22">TestEngine</span> API that can be used for implementing testing frameworks that can be used with the JUnit platform. It also provides a <span class="inline-code" id="218867793#-z33eez_23">ConsoleLauncher</span> that build tools like Gradle and Maven can use.</p></li><li class="list-item" id="218867793#-z33eez_18"><p id="218867793#-z33eez_24"><span class="control" id="218867793#-z33eez_25">JUnit Jupiter</span> is a test framework for writing tests in JUnit 5 that implements the <span class="inline-code" id="218867793#-z33eez_26">TestEngine</span> API provided by the JUnit Platform. It also provides annotations, assertions, and other APIs for writing tests.</p></li><li class="list-item" id="218867793#-z33eez_19"><p id="218867793#-z33eez_27"><span class="control" id="218867793#-z33eez_28">JUnit Vintage</span> is a test engine that provides support for running JUnit 3 and JUnit 4 tests on the JUnit 5 platform. It allows developers to migrate their existing JUnit 3 and JUnit 4 tests to JUnit 5 without the need for significant code changes.</p></li></ul><p id="218867793#-z33eez_9">Test methods are annotated with <span class="inline-code" id="218867793#-z33eez_29">org.junit.jupiter.api.Test</span>.</p><p id="218867793#-z33eez_10">Test methods aren&rsquo;t required to be public, can be package-private.</p><p id="218867793#-z33eez_11">Test methods can have parameters. This is achieved by providing a <span class="inline-code" id="218867793#-z33eez_30">ParameterResolver</span>.</p><p id="218867793#-z33eez_12">Test classes aren't required to have no-args constructors.</p><section class="detached"><h3 id="218867793#lifecycle" data-toc="lifecycle#Testing-Java-Applications.md-lifecycle">LifeCycle</h3><p id="218867793#-z33eez_31">Each test case is governed by a test life cycle which consists of the following three phases:</p><ul class="list" id="218867793#-z33eez_32" start="1"><li class="list-item" id="218867793#-z33eez_34"><p id="218867793#-z33eez_37"><span class="control" id="218867793#-z33eez_39">Setup phase</span>, where the test infrastructure is put in place. Two levels of setup:</p><ul class="list" id="218867793#-z33eez_38" start="1"><li class="list-item" id="218867793#-z33eez_40"><p id="218867793#-z33eez_42">class level:</p><ul class="list" id="218867793#-z33eez_43" start="1"><li class="list-item" id="218867793#-z33eez_44"><p id="218867793#-z33eez_46">Method annotated with <span class="inline-code" id="218867793#-z33eez_47">org.junit.jupiter.api.BeforeAll</span> where a costly object like database connection can be created for all the tests in a class.</p></li><li class="list-item" id="218867793#-z33eez_45"><p id="218867793#-z33eez_48">It must be static and non-private.</p></li></ul></li><li class="list-item" id="218867793#-z33eez_41"><p id="218867793#-z33eez_49">individual test setup methods:</p><ul class="list" id="218867793#-z33eez_50" start="1"><li class="list-item" id="218867793#-z33eez_51"><p id="218867793#-z33eez_53">Method annotated with <span class="inline-code" id="218867793#-z33eez_54">org.junit.jupiter.api.BeforeEach</span> executes before each and every test, thus doing away with any side effects from other test executions.</p></li><li class="list-item" id="218867793#-z33eez_52"><p id="218867793#-z33eez_55">A test case can have any number of methods marked with <span class="inline-code" id="218867793#-z33eez_56">BeforeEach</span>, but the execution order is not guaranteed.</p></li></ul></li></ul></li><li class="list-item" id="218867793#-z33eez_35"><p id="218867793#-z33eez_57"><span class="control" id="218867793#-z33eez_58">Test execution phase</span>. Result verification is also part of the test execution phase. The execution result will signify a success or failure.</p></li><li class="list-item" id="218867793#-z33eez_36"><p id="218867793#-z33eez_59"><span class="control" id="218867793#-z33eez_61">Cleanup phase</span>, where any cleanup required after posttest execution is performed. Two levels of cleanup:</p><ul class="list" id="218867793#-z33eez_60" start="1"><li class="list-item" id="218867793#-z33eez_62"><p id="218867793#-z33eez_64"><span class="inline-code" id="218867793#-z33eez_65">@AfterAll</span> performs a single time method invocation (i.e., post the execution of all test cases of a test class). It must be static and non-private.</p></li><li class="list-item" id="218867793#-z33eez_63"><p id="218867793#-z33eez_66"><span class="inline-code" id="218867793#-z33eez_67">@AfterEach</span> - posttest execution cleanup. The method must not be static.</p></li></ul></li></ul><p id="218867793#-z33eez_33">Optionally, we could extract out the <span class="inline-code" id="218867793#-z33eez_68">@BeforeAll</span> and <span class="inline-code" id="218867793#-z33eez_69">@AfterAll</span> methods to a superclass. This would clean up the duplicate code if the database is being used in more test cases.</p></section><section class="detached"><h3 id="218867793#junit-annotations" data-toc="junit-annotations#Testing-Java-Applications.md-junit-annotations">JUnit Annotations</h3><ul class="list" id="218867793#-z33eez_70" start="1"><li class="list-item" id="218867793#-z33eez_71"><p id="218867793#-z33eez_83"><span class="inline-code" id="218867793#-z33eez_84">@Test</span></p></li><li class="list-item" id="218867793#-z33eez_72"><p id="218867793#-z33eez_85"><span class="inline-code" id="218867793#-z33eez_86">@ParameterizedTest</span></p></li><li class="list-item" id="218867793#-z33eez_73"><p id="218867793#-z33eez_87"><span class="inline-code" id="218867793#-z33eez_88">@ValueSource</span>, <span class="inline-code" id="218867793#-z33eez_89">@CsvSource</span></p></li><li class="list-item" id="218867793#-z33eez_74"><p id="218867793#-z33eez_90"><span class="inline-code" id="218867793#-z33eez_91">@RepeatedTest</span></p></li><li class="list-item" id="218867793#-z33eez_75"><p id="218867793#-z33eez_92"><span class="inline-code" id="218867793#-z33eez_93">@BeforeAll</span></p></li><li class="list-item" id="218867793#-z33eez_76"><p id="218867793#-z33eez_94"><span class="inline-code" id="218867793#-z33eez_95">@AfterAll</span></p></li><li class="list-item" id="218867793#-z33eez_77"><p id="218867793#-z33eez_96"><span class="inline-code" id="218867793#-z33eez_97">@BeforeEach</span></p></li><li class="list-item" id="218867793#-z33eez_78"><p id="218867793#-z33eez_98"><span class="inline-code" id="218867793#-z33eez_99">@AfterEach</span></p></li><li class="list-item" id="218867793#-z33eez_79"><p id="218867793#-z33eez_100"><span class="inline-code" id="218867793#-z33eez_101">@Disabled</span></p></li><li class="list-item" id="218867793#-z33eez_80"><p id="218867793#-z33eez_102"><span class="inline-code" id="218867793#-z33eez_103">@DisplayName</span></p></li><li class="list-item" id="218867793#-z33eez_81"><p id="218867793#-z33eez_104"><span class="inline-code" id="218867793#-z33eez_105">@Tag</span></p></li><li class="list-item" id="218867793#-z33eez_82"><p id="218867793#-z33eez_106"><span class="inline-code" id="218867793#-z33eez_107">@Nested</span></p></li></ul></section><section class="detached"><h3 id="218867793#assertions" data-toc="assertions#Testing-Java-Applications.md-assertions">Assertions</h3><p id="218867793#-z33eez_108">Assertions are static methods from <span class="inline-code" id="218867793#-z33eez_114">org.junit.jupiter.api.Assertions</span>.</p><div class="table-wrapper detached"><table id="218867793#-z33eez_109"><tr class="header-row" id="218867793#-z33eez_115"><th id="218867793#-z33eez_127"><p>Assert Method</p></th><th id="218867793#-z33eez_128"><p>What It Does</p></th></tr><tr class="" id="218867793#-z33eez_116"><td id="218867793#-z33eez_129"><p>assertTrue</p></td><td id="218867793#-z33eez_130"><p>Assert that condition is true</p></td></tr><tr class="" id="218867793#-z33eez_117"><td id="218867793#-z33eez_131"><p>assertFalse</p></td><td id="218867793#-z33eez_132"><p>Assert that condition is false</p></td></tr><tr class="" id="218867793#-z33eez_118"><td id="218867793#-z33eez_133"><p>assertNull</p></td><td id="218867793#-z33eez_134"><p>Assert that object is null</p></td></tr><tr class="" id="218867793#-z33eez_119"><td id="218867793#-z33eez_135"><p>assertNotNull</p></td><td id="218867793#-z33eez_136"><p>Assert that object is not null</p></td></tr><tr class="" id="218867793#-z33eez_120"><td id="218867793#-z33eez_137"><p>assertEquals</p></td><td id="218867793#-z33eez_138"><p>Assert that expected and actual are equal</p></td></tr><tr class="" id="218867793#-z33eez_121"><td id="218867793#-z33eez_139"><p>assertNotEquals</p></td><td id="218867793#-z33eez_140"><p>Assert that expected and actual are not equal</p></td></tr><tr class="" id="218867793#-z33eez_122"><td id="218867793#-z33eez_141"><p>assertArrayEqual</p></td><td id="218867793#-z33eez_142"><p>Assert that expected and actual arrays are equals</p></td></tr><tr class="" id="218867793#-z33eez_123"><td id="218867793#-z33eez_143"><p>assertSame</p></td><td id="218867793#-z33eez_144"><p>Assert that expected and actual refer to the same obj</p></td></tr><tr class="" id="218867793#-z33eez_124"><td id="218867793#-z33eez_145"><p>assertNotSame</p></td><td id="218867793#-z33eez_146"><p>Assert that expected and actual do not refer to same</p></td></tr><tr class="" id="218867793#-z33eez_125"><td id="218867793#-z33eez_147"><p>assertThrow</p></td><td id="218867793#-z33eez_148"><p>Assert that an exception is thrown</p></td></tr><tr class="" id="218867793#-z33eez_126"><td id="218867793#-z33eez_149"><p>assertAll</p></td><td id="218867793#-z33eez_150"><p>Group multiple assertions and evaluate all</p></td></tr></table></div><p id="218867793#-z33eez_110">Each <span class="inline-code" id="218867793#-z33eez_151">assertXXX</span> method has at least three overloaded methods:</p><ul class="list" id="218867793#-z33eez_111" start="1"><li class="list-item" id="218867793#-z33eez_152"><p id="218867793#-z33eez_155"><span class="inline-code" id="218867793#-z33eez_156">assertNull(str);</span></p></li><li class="list-item" id="218867793#-z33eez_153"><p id="218867793#-z33eez_157"><span class="inline-code" id="218867793#-z33eez_158">assertNull(str, &quot;str should be null&quot;);</span></p></li><li class="list-item" id="218867793#-z33eez_154"><p id="218867793#-z33eez_159"><span class="inline-code" id="218867793#-z33eez_160">assertNull(str, () -&gt; &quot;str should be null&quot;); // lazy</span></p></li></ul><p id="218867793#-z33eez_112">Most <span class="inline-code" id="218867793#-z33eez_161">assert</span> methods take:</p><ul class="list" id="218867793#-z33eez_113" start="1"><li class="list-item" id="218867793#-z33eez_162"><p id="218867793#-z33eez_164">Expected value</p></li><li class="list-item" id="218867793#-z33eez_163"><p id="218867793#-z33eez_165">Actual value</p></li></ul></section><section class="detached"><h3 id="218867793#assertj" data-toc="assertj#Testing-Java-Applications.md-assertj">AssertJ</h3><p id="218867793#-z33eez_166">AssertJ is a third-party library of assertions.</p><div class="detached code-block" id="218867793#-z33eez_167"><pre><code class="language-java">import static org.assertj.core.api.Assertions.assertThat;</code></pre></div><ul class="list" id="218867793#-z33eez_168" start="1"><li class="list-item" id="218867793#-z33eez_169"><p id="218867793#-z33eez_175">Basic assertions:</p><ul class="list" id="218867793#-z33eez_176" start="1"><li class="list-item" id="218867793#-z33eez_177"><p id="218867793#-z33eez_179">assertThat(actual).isEqualTo(expected);</p></li><li class="list-item" id="218867793#-z33eez_178"><p id="218867793#-z33eez_180">assertThat(actual).isNotNull();</p></li></ul></li><li class="list-item" id="218867793#-z33eez_170"><p id="218867793#-z33eez_181">String</p><ul class="list" id="218867793#-z33eez_182" start="1"><li class="list-item" id="218867793#-z33eez_183"><p id="218867793#-z33eez_186">assertThat(actual).startsWith(expected);</p></li><li class="list-item" id="218867793#-z33eez_184"><p id="218867793#-z33eez_187">assertThat(actual).endsWith(expected);</p></li><li class="list-item" id="218867793#-z33eez_185"><p id="218867793#-z33eez_188">assertThat(actual).isEqualToIgnoringCase(expected);</p></li></ul></li><li class="list-item" id="218867793#-z33eez_171"><p id="218867793#-z33eez_189">Collections</p><ul class="list" id="218867793#-z33eez_190" start="1"><li class="list-item" id="218867793#-z33eez_191"><p id="218867793#-z33eez_193">assertThat(list).contains(expected);</p></li><li class="list-item" id="218867793#-z33eez_192"><p id="218867793#-z33eez_194">assertThat(list).hasSize(size);</p></li></ul></li><li class="list-item" id="218867793#-z33eez_172"><p id="218867793#-z33eez_195">Map</p><ul class="list" id="218867793#-z33eez_196" start="1"><li class="list-item" id="218867793#-z33eez_197"><p id="218867793#-z33eez_199">assertThat(map).containsKey(key);</p></li><li class="list-item" id="218867793#-z33eez_198"><p id="218867793#-z33eez_200">assertThat(map).hasSize(size);</p></li></ul></li><li class="list-item" id="218867793#-z33eez_173"><p id="218867793#-z33eez_201">Number</p><ul class="list" id="218867793#-z33eez_202" start="1"><li class="list-item" id="218867793#-z33eez_203"><p id="218867793#-z33eez_205">assertThat(value).isGreaterThan(expected);</p></li><li class="list-item" id="218867793#-z33eez_204"><p id="218867793#-z33eez_206">assertThat(value).isBetween(lower, upper);</p></li></ul></li><li class="list-item" id="218867793#-z33eez_174"><p id="218867793#-z33eez_207">Object</p><ul class="list" id="218867793#-z33eez_208" start="1"><li class="list-item" id="218867793#-z33eez_209"><p id="218867793#-z33eez_211">assertThat(obj).isInstanceOf(expected);</p></li><li class="list-item" id="218867793#-z33eez_210"><p id="218867793#-z33eez_212">assertThat(obj).hasNoNullFieldsOrProperties();</p></li></ul></li></ul></section></section><section class="detached"><h2 id="218867793#mockito" data-toc="mockito#Testing-Java-Applications.md-mockito">Mockito</h2><div class="detached code-block" id="218867793#-z33eez_213"><pre><code class="language-java">@RunWith(MockitoJUnitRunner.class)
+public class MyTest {
+    @Mock
+    private MyClass myMock;
+}</code></pre></div><ul class="list" id="218867793#-z33eez_214" start="1"><li class="list-item" id="218867793#-z33eez_221"><p id="218867793#-z33eez_224"><span class="control" id="218867793#-z33eez_225">Mocks</span>: Fake implementations</p></li><li class="list-item" id="218867793#-z33eez_222"><p id="218867793#-z33eez_226"><span class="control" id="218867793#-z33eez_228">Two ways to mock</span>:</p><ul class="list" id="218867793#-z33eez_227" start="1"><li class="list-item" id="218867793#-z33eez_229"><p id="218867793#-z33eez_231"><span class="inline-code" id="218867793#-z33eez_232">Mockito.mock(SomeClass.class)</span></p></li><li class="list-item" id="218867793#-z33eez_230"><p id="218867793#-z33eez_233"><span class="inline-code" id="218867793#-z33eez_234">@Mock</span> annotation</p></li></ul></li><li class="list-item" id="218867793#-z33eez_223"><p id="218867793#-z33eez_235"><span class="control" id="218867793#-z33eez_236">Stubs</span>:</p></li></ul><div class="detached code-block" id="218867793#-z33eez_215"><pre><code class="language-java">when(mockedList.get(0)).
+
+thenReturn(&quot;first&quot;);</code></pre></div><ul class="list" id="218867793#-z33eez_216" start="1"><li class="list-item" id="218867793#-z33eez_237"><p id="218867793#-z33eez_238"><span class="control" id="218867793#-z33eez_239">Spies</span>:</p></li></ul><div class="detached code-block" id="218867793#-z33eez_217"><pre><code class="language-java">@Spy
+private MyClass mySpy;</code></pre></div><section class="detached"><h3 id="218867793#bddmockito" data-toc="bddmockito#Testing-Java-Applications.md-bddmockito">BDDMockito</h3><div class="detached code-block" id="218867793#-z33eez_240"><pre><code class="language-java">import static org.mockito.BDDMockito.*;
+
+given(seller.askForBread()).
+
+willReturn(new Bread());</code></pre></div></section><section class="detached"><h3 id="218867793#argument-matchers" data-toc="argument-matchers#Testing-Java-Applications.md-argument-matchers">Argument Matchers</h3><div class="detached code-block" id="218867793#-z33eez_241"><pre><code class="language-java">when(mockList.get(anyInt())).
+
+thenReturn(42);</code></pre></div><p id="218867793#-z33eez_242">Custom matcher:</p><div class="detached code-block" id="218867793#-z33eez_243"><pre><code class="language-java">when(mockList.get(argThat(arg -&gt;arg &gt;=0&amp;&amp;arg &lt;=9))).
+
+thenReturn(42);</code></pre></div></section><section class="detached"><h3 id="218867793#verification" data-toc="verification#Testing-Java-Applications.md-verification">Verification</h3><div class="detached code-block" id="218867793#-z33eez_244"><pre><code class="language-java">verify(myMock).
+
+doSomething();
+
+verify(myMock, times(2)).
+
+doSomething();</code></pre></div><ul class="list" id="218867793#-z33eez_245" start="1"><li class="list-item" id="218867793#-z33eez_248"><p id="218867793#-z33eez_249">For void methods:</p></li></ul><div class="detached code-block" id="218867793#-z33eez_246"><pre><code class="language-java">doThrow(RuntimeException .class).
+
+when(repository).
+
+delete(null);</code></pre></div><ul class="list" id="218867793#-z33eez_247" start="1"><li class="list-item" id="218867793#-z33eez_250"><p id="218867793#-z33eez_251"><span class="inline-code" id="218867793#-z33eez_252">doReturn</span>, <span class="inline-code" id="218867793#-z33eez_253">doThrow</span>, <span class="inline-code" id="218867793#-z33eez_254">doAnswer</span>, <span class="inline-code" id="218867793#-z33eez_255">doNothing</span>, <span class="inline-code" id="218867793#-z33eez_256">doCallRealMethod</span></p></li></ul></section></section><section class="detached"><h2 id="218867793#testing-spring-applications" data-toc="testing-spring-applications#Testing-Java-Applications.md-testing-spring-applications">Testing Spring Applications</h2><section class="detached"><h3 id="218867793#spring-testcontext-framework" data-toc="spring-testcontext-framework#Testing-Java-Applications.md-spring-testcontext-framework">Spring TestContext Framework</h3><p id="218867793#-z33eez_260">Unit and integration testing in Spring is supported by the annotation-based <span class="control" id="218867793#-z33eez_264">Spring TestContext Framework</span>, found in the <span class="inline-code" id="218867793#-z33eez_265">org.springframework.test.context</span> package.</p><p id="218867793#-z33eez_261">It supports multiple test frameworks like <span class="control" id="218867793#-z33eez_266">JUnit</span> and <span class="control" id="218867793#-z33eez_267">TestNG</span>.</p><p id="218867793#-z33eez_262">To improve performance, it reuses the same application context across tests instead of reloading it each time.</p><p id="218867793#-z33eez_263">You configure the test context using annotations such as <span class="inline-code" id="218867793#-z33eez_268">@ContextConfiguration</span> and <span class="inline-code" id="218867793#-z33eez_269">@ActiveProfiles</span>.</p></section><section class="detached"><h3 id="218867793#spring-boot-testing" data-toc="spring-boot-testing#Testing-Java-Applications.md-spring-boot-testing">Spring Boot Testing</h3><p id="218867793#-z33eez_270">Spring Boot provides test support through two main modules:</p><ul class="list" id="218867793#-z33eez_271" start="1"><li class="list-item" id="218867793#-z33eez_276"><p id="218867793#-z33eez_278"><span class="inline-code" id="218867793#-z33eez_279">spring-boot-test</span> for core testing utilities</p></li><li class="list-item" id="218867793#-z33eez_277"><p id="218867793#-z33eez_280"><span class="inline-code" id="218867793#-z33eez_281">spring-boot-test-autoconfigure</span> for autoconfiguration in tests</p></li></ul><p id="218867793#-z33eez_272">Most projects use the <span class="inline-code" id="218867793#-z33eez_282">spring-boot-starter-test</span> dependency, which includes both modules and libraries like <span class="control" id="218867793#-z33eez_283">JUnit Jupiter</span>, <span class="control" id="218867793#-z33eez_284">AssertJ</span>, <span class="control" id="218867793#-z33eez_285">Hamcrest</span>, <span class="control" id="218867793#-z33eez_286">JSONassert</span>, and <span class="control" id="218867793#-z33eez_287">JsonPath</span>.</p><p id="218867793#-z33eez_273">To load the full Spring Boot context in tests, use the <span class="inline-code" id="218867793#-z33eez_288">@SpringBootTest</span> annotation. It replaces <span class="inline-code" id="218867793#-z33eez_289">@ContextConfiguration</span> and enables access to Spring Boot features. For narrower tests, other annotations are available (e.g. <span class="inline-code" id="218867793#-z33eez_290">@WebMvcTest</span>, <span class="inline-code" id="218867793#-z33eez_291">@DataJpaTest</span>).</p><ul class="list" id="218867793#-z33eez_274" start="1"><li class="list-item" id="218867793#-z33eez_292"><p id="218867793#-z33eez_294">With <span class="control" id="218867793#-z33eez_295">JUnit 4</span>, annotate the test class with <span class="inline-code" id="218867793#-z33eez_296">@RunWith(SpringRunner.class)</span>.</p></li><li class="list-item" id="218867793#-z33eez_293"><p id="218867793#-z33eez_297">With <span class="control" id="218867793#-z33eez_298">JUnit 5</span>, no extra annotation is needed&mdash;<span class="inline-code" id="218867793#-z33eez_299">@SpringBootTest</span> and similar annotations already include <span class="inline-code" id="218867793#-z33eez_300">@ExtendWith(SpringExtension.class)</span>.</p></li></ul><p id="218867793#-z33eez_275">These annotations enable features like dependency injection and support for <span class="inline-code" id="218867793#-z33eez_301">@Autowired</span>, <span class="inline-code" id="218867793#-z33eez_302">@MockBean</span>, and others in test classes.</p></section><section class="detached"><h3 id="218867793#annotations" data-toc="annotations#Testing-Java-Applications.md-annotations">Annotations</h3><section class="detached"><h4 id="218867793#mocking" data-toc="mocking#Testing-Java-Applications.md-mocking">Mocking</h4><p id="218867793#-z33eez_306"><span class="inline-code" id="218867793#-z33eez_308">@Mock</span> and <span class="inline-code" id="218867793#-z33eez_309">@InjectMocks</span> are Mockito annotations that used to create mock objects and inject them into the class under test.</p><p id="218867793#-z33eez_307"><span class="inline-code" id="218867793#-z33eez_310">@MockBean</span> is a Spring Boot annotation that replaces a Spring-managed bean with a mock in tests that load the application context.</p></section><section class="detached"><h4 id="218867793#auto-configured-tests" data-toc="auto-configured-tests#Testing-Java-Applications.md-auto-configured-tests">Auto-Configured Tests</h4><p id="218867793#-z33eez_311">Spring Boot's autoconfigured annotations help to load parts of the complete application and test specific layers of the codebase:</p><ul class="list" id="218867793#-z33eez_312" start="1"><li class="list-item" id="218867793#-z33eez_313"><p id="218867793#-z33eez_317"><span class="inline-code" id="218867793#-z33eez_318">@DataMongoTest</span>. Test MongoDB applications. By default, it configures an in-memory embedded MongoDB if the driver is available through dependencies, configures a <span class="inline-code" id="218867793#-z33eez_319">MongoTemplate</span>, scans for <span class="inline-code" id="218867793#-z33eez_320">@Document</span> classes, and configures Spring Data MongoDB repositories.</p></li><li class="list-item" id="218867793#-z33eez_314"><p id="218867793#-z33eez_321"><span class="inline-code" id="218867793#-z33eez_322">@DataRedisTest</span>. Test Redis applications. It scans for <span class="inline-code" id="218867793#-z33eez_323">@RedisHash</span> classes and configures Spring Data Redis repositories by default.</p></li><li class="list-item" id="218867793#-z33eez_315"><p id="218867793#-z33eez_324"><span class="inline-code" id="218867793#-z33eez_325">@RestClientTest</span>. Test REST clients. It autoconfigures different dependencies such as Jackson, GSON, and Jsonb support; configures a <span class="inline-code" id="218867793#-z33eez_326">RestTemplateBuilder</span>; and adds support for <span class="inline-code" id="218867793#-z33eez_327">MockRestServiceServer</span> by default.</p></li><li class="list-item" id="218867793#-z33eez_316"><p id="218867793#-z33eez_328"><span class="inline-code" id="218867793#-z33eez_329">@JsonTest</span>. Initializes the Spring application context only with those beans needed to test JSON serialization.</p></li></ul></section><section class="detached"><h4 id="218867793#other-annotations" data-toc="other-annotations#Testing-Java-Applications.md-other-annotations">Other Annotations</h4><ul class="list" id="218867793#-z33eez_330" start="1"><li class="list-item" id="218867793#-z33eez_331"><p id="218867793#-z33eez_336"><span class="inline-code" id="218867793#-z33eez_337">@AutoConfigureMockMvc</span>. Used to autoconfigure a <span class="inline-code" id="218867793#-z33eez_338">MockMvc</span> instance for testing Spring MVC controllers.</p></li><li class="list-item" id="218867793#-z33eez_332"><p id="218867793#-z33eez_339"><span class="inline-code" id="218867793#-z33eez_340">@TestPropertySource</span>. Used to specify one or more properties files to load for testing.</p></li><li class="list-item" id="218867793#-z33eez_333"><p id="218867793#-z33eez_341"><span class="inline-code" id="218867793#-z33eez_342">@Transactional</span>. Used to indicate that a test method should be run within a transaction, which will be rolled back after the test completes.</p></li><li class="list-item" id="218867793#-z33eez_334"><p id="218867793#-z33eez_343"><span class="inline-code" id="218867793#-z33eez_344">@DirtiesContext</span>. Used to indicate that a test method modifies the application context and should cause the context to be recreated for subsequent tests.</p></li><li class="list-item" id="218867793#-z33eez_335"><p id="218867793#-z33eez_345"><span class="inline-code" id="218867793#-z33eez_346">@DatabaseSetup</span>. Allows you to populate a database with test data before running a test. This annotation is typically used in integration tests where you want to ensure that the database is in a specific state before the test starts.</p></li></ul></section></section></section><section class="detached"><h2 id="218867793#references" data-toc="references#Testing-Java-Applications.md-references">References</h2><ul class="list" id="218867793#-z33eez_347" start="1"><li class="list-item" id="218867793#-z33eez_348"><p id="218867793#-z33eez_349">https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations (<a href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations">https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations</a>)</p></li></ul></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="671578280">Integration Tests</h1><section class="detached"><h2 id="671578280#about" data-toc="about#Integration-Tests.md-about">About</h2><p id="671578280#-eb99wy_13">Integration tests focus on how multiple components work together.</p></section><section class="detached"><h2 id="671578280#integration-testing-in-spring-framework" data-toc="integration-testing-in-spring-framework#Integration-Tests.md-integration-testing-in-spring-framework">Integration Testing in Spring Framework</h2><p id="671578280#-eb99wy_14">The Spring Framework provides first-class support for integration testing through the <span class="inline-code" id="671578280#-eb99wy_15">spring-test</span> module, which includes classes in the <span class="inline-code" id="671578280#-eb99wy_16">org.springframework.test</span> package.</p></section><section class="detached"><h2 id="671578280#comparison-to-unit-and-end-to-end-e2e-tests" data-toc="comparison-to-unit-and-end-to-end-e2e-tests#Integration-Tests.md-comparison-to-unit-and-end-to-end-e2e-tests">Comparison to Unit and End-to-End (E2E) Tests</h2><p id="671578280#-eb99wy_17">Integration tests in Spring do not require an application server or external deployment environment.  They are slower than unit tests but significantly faster than full end-to-end tests like those using Selenium.</p><p id="671578280#-eb99wy_18">While integration tests often avoid mocking, mocking is still appropriate when isolating external systems or avoiding dependencies such as third-party APIs or message brokers.</p><p id="671578280#-eb99wy_19">Because integration tests can be time-consuming and may require resources like a real or embedded database, they should be separated from unit tests.  It is recommended to use a dedicated test profile and run them separately (e.g., using a <span class="inline-code" id="671578280#-eb99wy_22">test</span> or <span class="inline-code" id="671578280#-eb99wy_23">integration</span> Maven/Gradle task).</p></section><section class="detached"><h2 id="671578280#common-use-cases" data-toc="common-use-cases#Integration-Tests.md-common-use-cases">Common Use Cases</h2><ul class="list" id="671578280#-eb99wy_24" start="1"><li class="list-item" id="671578280#-eb99wy_25"><p id="671578280#-eb99wy_29">Testing Spring MVC endpoints, including request-response flow, error handling, and security</p></li><li class="list-item" id="671578280#-eb99wy_26"><p id="671578280#-eb99wy_30">Verifying interaction between services and external dependencies (e.g., databases, messaging systems, web services)</p></li><li class="list-item" id="671578280#-eb99wy_27"><p id="671578280#-eb99wy_31">Testing Spring configuration: bean definitions, property sources, and active profiles</p></li><li class="list-item" id="671578280#-eb99wy_28"><p id="671578280#-eb99wy_32">Full-stack testing across the web, service, and persistence layers</p></li></ul></section><section class="detached"><h2 id="671578280#integration-testing-in-spring-boot" data-toc="integration-testing-in-spring-boot#Integration-Tests.md-integration-testing-in-spring-boot">Integration Testing in Spring Boot</h2><section class="detached"><h3 id="671578280#springboottest" data-toc="springboottest#Integration-Tests.md-springboottest">@SpringBootTest</h3><p id="671578280#-eb99wy_35">Used to load the complete application context for integration testing.  Allows the use of <span class="inline-code" id="671578280#-eb99wy_38">@Autowired</span> to inject any bean discovered through component scanning.  Can be applied at the class level or to individual methods for customized test contexts.</p></section></section><section class="detached"><h2 id="671578280#mockmvc" data-toc="mockmvc#Integration-Tests.md-mockmvc">MockMvc</h2><p id="671578280#-eb99wy_40">The Spring MVC Test framework (<span class="inline-code" id="671578280#-eb99wy_45">MockMvc</span>) supports testing MVC controllers without starting a real server.</p><p id="671578280#-eb99wy_41">Unlike unit tests of controllers, <span class="inline-code" id="671578280#-eb99wy_46">MockMvc</span> tests involve a full request-processing pipeline&mdash;filters, interceptors, and controller logic&mdash;though still within the test environment.</p><div class="detached code-block" id="671578280#-eb99wy_42"><pre><code class="language-java">import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.servlet.MockMvc;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@SpringBootTest
+@AutoConfigureMockMvc
+class MyMockMvcTests {
+
+    @Test
+    void testWithMockMvc(@Autowired MockMvc mvc) throws Exception {
+        mvc.perform(get(&quot;/&quot;))
+                .andExpect(status().isOk())
+                .andExpect(content().string(&quot;Hello World&quot;));
+    }
+}</code></pre></div><p id="671578280#-eb99wy_43">Documentation: https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework/server-setup-options.html (<a href="https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework/server-setup-options.html">https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework/server-setup-options.html</a>)</p><section class="detached"><h3 id="671578280#mockmvc-setup-options" data-toc="mockmvc-setup-options#Integration-Tests.md-mockmvc-setup-options">MockMvc Setup Options</h3><ul class="list" id="671578280#-eb99wy_48" start="1"><li class="list-item" id="671578280#-eb99wy_49"><p id="671578280#-eb99wy_51">Programmatically configure Spring MVC to point directly to controllers</p></li><li class="list-item" id="671578280#-eb99wy_50"><p id="671578280#-eb99wy_52">Use Spring configuration that includes the full MVC and controller infrastructure</p></li></ul></section></section><section class="detached"><h2 id="671578280#webtestclient" data-toc="webtestclient#Integration-Tests.md-webtestclient">WebTestClient</h2><p id="671578280#-eb99wy_53"><span class="inline-code" id="671578280#-eb99wy_57">WebTestClient</span> is used for testing reactive applications built with Spring WebFlux.</p><div class="detached code-block" id="671578280#-eb99wy_54"><pre><code class="language-java">import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.web.reactive.server.WebTestClient;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+class MyRandomPortWebTestClientTests {
+
+    @Test
+    void exampleTest(@Autowired WebTestClient webClient) {
+        webClient.get().uri(&quot;/&quot;)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo(&quot;Hello World&quot;);
+    }
+}</code></pre></div><p id="671578280#-eb99wy_55"><span class="control" id="671578280#-eb99wy_58">Note</span>: This requires the following dependency:</p><div class="detached code-block" id="671578280#-eb99wy_56"><pre><code class="language-groovy">implementation 'org.springframework.boot:spring-boot-starter-webflux'</code></pre></div></section><section class="detached"><h2 id="671578280#performing-requests-with-mockmvc" data-toc="performing-requests-with-mockmvc#Integration-Tests.md-performing-requests-with-mockmvc">Performing Requests with MockMvc</h2><p id="671578280#-eb99wy_59">Documentation: https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework/server-performing-requests.html (<a href="https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework/server-performing-requests.html">https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework/server-performing-requests.html</a>)</p></section><section class="detached"><h2 id="671578280#active-profiles" data-toc="active-profiles#Integration-Tests.md-active-profiles">Active Profiles</h2><p id="671578280#-eb99wy_61">Use <span class="inline-code" id="671578280#-eb99wy_63">@ActiveProfiles</span> to declare which profile should be active when loading the <span class="inline-code" id="671578280#-eb99wy_64">ApplicationContext</span> for an integration test.</p><div class="detached code-block" id="671578280#-eb99wy_62"><pre><code class="language-java">@ContextConfiguration
+@ActiveProfiles(&quot;dev&quot;)
+class DeveloperTest {
+}</code></pre></div></section><section class="detached"><h2 id="671578280#example-integration-test-configuration" data-toc="example-integration-test-configuration#Integration-Tests.md-example-integration-test-configuration">Example Integration Test Configuration</h2><p id="671578280#-eb99wy_65"><span class="inline-code" id="671578280#-eb99wy_67">application-integrationtest.properties</span></p><div class="detached code-block" id="671578280#-eb99wy_66"><pre><code class="language-properties">spring.datasource.url=jdbc:h2:mem:test
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="563116399">End-to-End Tests</h1><section class="detached"><h2 id="563116399#webtestclient" data-toc="webtestclient#End-to-End-Tests.md-webtestclient">WebTestClient</h2><p id="563116399#u00o6d_5">WebTestClient documentation (<a href="https://docs.spring.io/spring-framework/reference/testing/webtestclient.html">https://docs.spring.io/spring-framework/reference/testing/webtestclient.html</a>)</p><p id="563116399#u00o6d_6"><span class="inline-code" id="563116399#u00o6d_11">WebTestClient</span> is an HTTP client used for performing end-to-end HTTP tests in Spring applications.  It allows testing against:</p><ul class="list" id="563116399#u00o6d_7" start="1"><li class="list-item" id="563116399#u00o6d_13"><p id="563116399#u00o6d_15">a mock server (without starting a real HTTP server)</p></li><li class="list-item" id="563116399#u00o6d_14"><p id="563116399#u00o6d_16">a running server (when bound to a <span class="inline-code" id="563116399#u00o6d_17">@SpringBootTest</span> with <span class="inline-code" id="563116399#u00o6d_18">RANDOM_PORT</span>)</p></li></ul><p id="563116399#u00o6d_8">Example use cases include verifying HTTP endpoints, request/response behavior, and full request processing logic in Spring WebFlux or Web MVC applications.</p><section class="detached"><h3 id="563116399#webtestclient-setup-options" data-toc="webtestclient-setup-options#End-to-End-Tests.md-webtestclient-setup-options">WebTestClient Setup Options</h3><p id="563116399#u00o6d_19">You can bind <span class="inline-code" id="563116399#u00o6d_22">WebTestClient</span> to:</p><ul class="list" id="563116399#u00o6d_20" start="1"><li class="list-item" id="563116399#u00o6d_23"><p id="563116399#u00o6d_25">application context via mock infrastructure</p></li><li class="list-item" id="563116399#u00o6d_24"><p id="563116399#u00o6d_26">a real HTTP server using <span class="inline-code" id="563116399#u00o6d_27">@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)</span></p></li></ul></section></section><section class="detached"><h2 id="563116399#cucumber" data-toc="cucumber#End-to-End-Tests.md-cucumber">Cucumber</h2><p id="563116399#u00o6d_28">Cucumber documentation (<a href="https://cucumber.io/">https://cucumber.io/</a>)</p><p id="563116399#u00o6d_29">Cucumber is a popular open-source BDD (Behavior-Driven Development) tool. It allows writing executable specifications in plain English using <span class="control" id="563116399#u00o6d_32">Gherkin</span> syntax.</p><section class="detached"><h3 id="563116399#key-concepts" data-toc="key-concepts#End-to-End-Tests.md-key-concepts">Key Concepts</h3><ul class="list" id="563116399#u00o6d_33" start="1"><li class="list-item" id="563116399#u00o6d_36"><p id="563116399#u00o6d_40">A <span class="control" id="563116399#u00o6d_41">scenario</span> is a test case written in Gherkin.</p></li><li class="list-item" id="563116399#u00o6d_37"><p id="563116399#u00o6d_42">Each scenario consists of steps: <span class="control" id="563116399#u00o6d_43">Given</span>, <span class="control" id="563116399#u00o6d_44">When</span>, and <span class="control" id="563116399#u00o6d_45">Then</span>.</p></li><li class="list-item" id="563116399#u00o6d_38"><p id="563116399#u00o6d_46">Steps are mapped to Java methods via <span class="control" id="563116399#u00o6d_47">step definitions</span>.</p></li><li class="list-item" id="563116399#u00o6d_39"><p id="563116399#u00o6d_48">Scenarios are stored in <span class="inline-code" id="563116399#u00o6d_49">.feature</span> files under <span class="inline-code" id="563116399#u00o6d_50">src/test/resources</span>.</p></li></ul><p id="563116399#u00o6d_34">Scenarios are written before production code to define behavior. Once implemented, they serve as both <span class="control" id="563116399#u00o6d_51">documentation</span> and <span class="control" id="563116399#u00o6d_52">automated tests</span>.</p><p id="563116399#u00o6d_35">Example file structure:</p></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-991381940">Software Requirements Specification</h1><p id="-991381940#i67962_3">A <span class="control" id="-991381940#i67962_13">Software Requirements Specification (SRS)</span> is a technical document that defines what a software product must do and how it must be developed. It outlines the application&rsquo;s functionality, features, design constraints, limitations, and overall goals.</p><p id="-991381940#i67962_4">The SRS serves two primary purposes:</p><ul class="list" id="-991381940#i67962_5" start="1"><li class="list-item" id="-991381940#i67962_14"><p id="-991381940#i67962_16"><span class="control" id="-991381940#i67962_17">For clients</span> it defines expectations, deliverables, and scope.</p></li><li class="list-item" id="-991381940#i67962_15"><p id="-991381940#i67962_18"><span class="control" id="-991381940#i67962_19">For developers</span> it guides planning, effort estimation, technology stack selection, and project costing.</p></li></ul><p id="-991381940#i67962_6">The structure and depth of an SRS can vary depending on project complexity and development methodology. However, all well-formed SRS documents typically include the following elements.</p><section class="detached"><h2 id="-991381940#purpose" data-toc="purpose#Software-Requirements-Specification.md-purpose">Purpose</h2><p id="-991381940#i67962_20">A clear and concise statement defining the intent of the software. It outlines what the system must achieve once completed and what problem it solves.</p></section><section class="detached"><h2 id="-991381940#product-description" data-toc="product-description#Software-Requirements-Specification.md-product-description">Product Description</h2><p id="-991381940#i67962_21">The definition of the system's expected behavior, including:</p><ul class="list" id="-991381940#i67962_22" start="1"><li class="list-item" id="-991381940#i67962_23"><p id="-991381940#i67962_26">The intended users</p></li><li class="list-item" id="-991381940#i67962_24"><p id="-991381940#i67962_27">The operational environment (e.g., web, mobile, desktop)</p></li><li class="list-item" id="-991381940#i67962_25"><p id="-991381940#i67962_28">Assumptions and constraints that may affect development or operation</p></li></ul></section><section class="detached"><h2 id="-991381940#functional-requirements" data-toc="functional-requirements#Software-Requirements-Specification.md-functional-requirements">Functional Requirements</h2><p id="-991381940#i67962_29">Definition of the system's required behavior &mdash; what the system must do in response to specific inputs or conditions. Typically expressed as: <span class="inline-code" id="-991381940#i67962_30">The system shall &lt;perform a function&gt;.</span></p></section><section class="detached"><h2 id="-991381940#non-functional-requirements" data-toc="non-functional-requirements#Software-Requirements-Specification.md-non-functional-requirements">Non-Functional Requirements</h2><p id="-991381940#i67962_31">Definition of the system's required qualities &mdash; such as performance, reliability, scalability, usability, and security. Typically expressed as: <span class="inline-code" id="-991381940#i67962_32">The system shall &lt;meet a quality requirement&gt;.</span></p></section><section class="detached"><h2 id="-991381940#user-stories" data-toc="user-stories#Software-Requirements-Specification.md-user-stories">User Stories</h2><p id="-991381940#i67962_33">A structured way to describe expected system behavior from the user's perspective. Each story includes:</p><ul class="list" id="-991381940#i67962_34" start="1"><li class="list-item" id="-991381940#i67962_35"><p id="-991381940#i67962_38"><span class="control" id="-991381940#i67962_39">Title</span> &ndash; A concise description of the feature or capability</p></li><li class="list-item" id="-991381940#i67962_36"><p id="-991381940#i67962_40"><span class="control" id="-991381940#i67962_41">Narrative</span> &ndash; <span class="inline-code" id="-991381940#i67962_42">As a &lt;type of user&gt;, I want &lt;some goal&gt;, so that &lt;some reason&gt;</span></p></li><li class="list-item" id="-991381940#i67962_37"><p id="-991381940#i67962_43"><span class="control" id="-991381940#i67962_45">Acceptance Criteria</span> &ndash; Scenarios written in Gherkin syntax, using:</p><ul class="list" id="-991381940#i67962_44" start="1"><li class="list-item" id="-991381940#i67962_46"><p id="-991381940#i67962_49"><span class="emphasis" id="-991381940#i67962_50">Given</span> (initial state)</p></li><li class="list-item" id="-991381940#i67962_47"><p id="-991381940#i67962_51"><span class="emphasis" id="-991381940#i67962_52">When</span> (triggering event or action)</p></li><li class="list-item" id="-991381940#i67962_48"><p id="-991381940#i67962_53"><span class="emphasis" id="-991381940#i67962_54">Then</span> (expected result)</p></li></ul></li></ul></section><section class="detached"><h2 id="-991381940#test-cases" data-toc="test-cases#Software-Requirements-Specification.md-test-cases">Test Cases</h2><p id="-991381940#i67962_55">Used to verify that a specific function or feature of the software behaves as required. Follows the <span class="control" id="-991381940#i67962_57">AAA pattern</span>:</p><ul class="list" id="-991381940#i67962_56" start="1"><li class="list-item" id="-991381940#i67962_58"><p id="-991381940#i67962_61"><span class="control" id="-991381940#i67962_62">Arrange</span> &ndash; Set up the necessary data and environment</p></li><li class="list-item" id="-991381940#i67962_59"><p id="-991381940#i67962_63"><span class="control" id="-991381940#i67962_64">Act</span> &ndash; Execute the function or feature being tested</p></li><li class="list-item" id="-991381940#i67962_60"><p id="-991381940#i67962_65"><span class="control" id="-991381940#i67962_66">Assert</span> &ndash; Check that the result matches the expected outcome</p></li></ul></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="2716327">YAML</h1><p id="2716327#-x1vlg3_3"><span class="control" id="2716327#-x1vlg3_10">YAML</span> stands for <span class="control" id="2716327#-x1vlg3_11">&quot;YAML Ain't Markup Language&quot;</span>.  It is a human-readable data serialization format commonly used for configuration files and data exchange between languages. YAML is widely used in modern software tools and infrastructure. Files typically have <span class="inline-code" id="2716327#-x1vlg3_13">.yaml</span> or <span class="inline-code" id="2716327#-x1vlg3_14">.yml</span> extensions.</p><section class="detached"><h2 id="2716327#basic-data-types" data-toc="basic-data-types#YAML.md-basic-data-types">Basic Data Types</h2><p id="2716327#-x1vlg3_15">YAML supports several standard data types:</p><ul class="list" id="2716327#-x1vlg3_16" start="1"><li class="list-item" id="2716327#-x1vlg3_18"><p id="2716327#-x1vlg3_23"><span class="control" id="2716327#-x1vlg3_24">Integers</span>: <span class="inline-code" id="2716327#-x1vlg3_25">15</span>, <span class="inline-code" id="2716327#-x1vlg3_26">123</span></p></li><li class="list-item" id="2716327#-x1vlg3_19"><p id="2716327#-x1vlg3_27"><span class="control" id="2716327#-x1vlg3_28">Strings</span>: <span class="inline-code" id="2716327#-x1vlg3_29">&quot;15&quot;</span>, <span class="inline-code" id="2716327#-x1vlg3_30">'Hello, YAML!'</span> (use single or double quotes)</p></li><li class="list-item" id="2716327#-x1vlg3_20"><p id="2716327#-x1vlg3_31"><span class="control" id="2716327#-x1vlg3_32">Floats</span>: <span class="inline-code" id="2716327#-x1vlg3_33">15.033</span></p></li><li class="list-item" id="2716327#-x1vlg3_21"><p id="2716327#-x1vlg3_34"><span class="control" id="2716327#-x1vlg3_35">Booleans</span>: <span class="inline-code" id="2716327#-x1vlg3_36">true</span>, <span class="inline-code" id="2716327#-x1vlg3_37">false</span></p></li><li class="list-item" id="2716327#-x1vlg3_22"><p id="2716327#-x1vlg3_38"><span class="control" id="2716327#-x1vlg3_39">Null</span>: <span class="inline-code" id="2716327#-x1vlg3_40">null</span></p></li></ul><p id="2716327#-x1vlg3_17">YAML tries to auto-detect types. To explicitly declare a type, use <span class="inline-code" id="2716327#-x1vlg3_41">!!</span>.  Example: <span class="inline-code" id="2716327#-x1vlg3_43">!!str yes</span> forces YAML to treat <span class="inline-code" id="2716327#-x1vlg3_44">yes</span> as a string.</p></section><section class="detached"><h2 id="2716327#maps-key-value-pairs" data-toc="maps-key-value-pairs#YAML.md-maps-key-value-pairs">Maps (Key&ndash;Value Pairs)</h2><p id="2716327#-x1vlg3_45">YAML maps are structured as key-value pairs.</p><div class="detached code-block" id="2716327#-x1vlg3_46"><pre><code class="language-yaml">object: Book
+
+metadata:
+  name: Three Men in a Boat
+  author: Jerome K Jerome
+  genre: humorous account
+
+published:
+  year: 1889
+  country: United Kingdom</code></pre></div><ul class="list" id="2716327#-x1vlg3_47" start="1"><li class="list-item" id="2716327#-x1vlg3_48"><p id="2716327#-x1vlg3_51">The <span class="inline-code" id="2716327#-x1vlg3_52">---</span> line is optional unless you're defining multiple documents.</p></li><li class="list-item" id="2716327#-x1vlg3_49"><p id="2716327#-x1vlg3_53">Keys and values are separated by a colon <span class="inline-code" id="2716327#-x1vlg3_54">:</span>, followed by a space.</p></li><li class="list-item" id="2716327#-x1vlg3_50"><p id="2716327#-x1vlg3_55">Use <span class="control" id="2716327#-x1vlg3_56">spaces</span> for indentation, <span class="control" id="2716327#-x1vlg3_57">not tabs</span>.</p></li></ul></section><section class="detached"><h2 id="2716327#lists-sequences" data-toc="lists-sequences#YAML.md-lists-sequences">Lists (Sequences)</h2><p id="2716327#-x1vlg3_58">YAML supports block-style and flow-style lists.</p><section class="detached"><h3 id="2716327#block-style" data-toc="block-style#YAML.md-block-style">Block Style:</h3><div class="detached code-block" id="2716327#-x1vlg3_61"><pre><code class="language-yaml">animals:
+  - cat
+  - dog
+  - bird</code></pre></div><p id="2716327#-x1vlg3_62">Each list item starts with a <span class="inline-code" id="2716327#-x1vlg3_63">-</span> followed by a space.</p></section><section class="detached"><h3 id="2716327#flow-style" data-toc="flow-style#YAML.md-flow-style">Flow Style:</h3><div class="detached code-block" id="2716327#-x1vlg3_64"><pre><code class="language-yaml">animals: [ cat, dog, bird ]</code></pre></div></section></section><section class="detached"><h2 id="2716327#combining-maps-and-lists" data-toc="combining-maps-and-lists#YAML.md-combining-maps-and-lists">Combining Maps and Lists</h2><p id="2716327#-x1vlg3_65">YAML allows nesting of maps and lists.</p><div class="detached code-block" id="2716327#-x1vlg3_66"><pre><code class="language-yaml">weekend:
+  saturday:
+    - order cleaning
+    - order a pizza
+    - watch new series
+  sunday:
+    - go to yoga
+    - hang out with a friend</code></pre></div><p id="2716327#-x1vlg3_67">You can nest lists inside maps, maps inside lists, and so on.</p></section><section class="detached"><h2 id="2716327#multi-line-strings" data-toc="multi-line-strings#YAML.md-multi-line-strings">Multi-line Strings</h2><p id="2716327#-x1vlg3_68">Use <span class="inline-code" id="2716327#-x1vlg3_70">|</span> to preserve newlines in multi-line strings.</p><div class="detached code-block" id="2716327#-x1vlg3_69"><pre><code class="language-yaml">saturday: |
+  order cleaning
+  order a pizza
+  watch new series</code></pre></div></section><section class="detached"><h2 id="2716327#comments" data-toc="comments#YAML.md-comments">Comments</h2><p id="2716327#-x1vlg3_71">Use <span class="inline-code" id="2716327#-x1vlg3_73">#</span> to add comments.</p><div class="detached code-block" id="2716327#-x1vlg3_72"><pre><code class="language-yaml"># This is a comment
+metadata: # inline comment
+  name: Three Men in a Boat
+  author: Jerome K Jerome
+  genre: humorous account</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="569230577">Keycloak</h1><section class="detached"><h2 id="569230577#oauth-2-0" data-toc="oauth-2-0#Keycloak.md-oauth-2-0">OAuth 2.0</h2><p id="569230577#nrr2xv_8">OAuth 2.0 defines four key roles:</p><ul class="list" id="569230577#nrr2xv_9" start="1"><li class="list-item" id="569230577#nrr2xv_18"><p id="569230577#nrr2xv_22"><span class="control" id="569230577#nrr2xv_23">Resource Owner</span>: The end user who owns the data.</p></li><li class="list-item" id="569230577#nrr2xv_19"><p id="569230577#nrr2xv_24"><span class="control" id="569230577#nrr2xv_25">Resource Server</span>: Hosts the protected resources (e.g., REST APIs).</p></li><li class="list-item" id="569230577#nrr2xv_20"><p id="569230577#nrr2xv_26"><span class="control" id="569230577#nrr2xv_27">Client</span>: The application accessing resources.</p></li><li class="list-item" id="569230577#nrr2xv_21"><p id="569230577#nrr2xv_28"><span class="control" id="569230577#nrr2xv_29">Authorization Server</span>: Issues access tokens (e.g., Keycloak).</p></li></ul><p id="569230577#nrr2xv_10">OAuth 2.0 Flows:</p><ul class="list" id="569230577#nrr2xv_11" start="1"><li class="list-item" id="569230577#nrr2xv_30"><p id="569230577#nrr2xv_33"><span class="control" id="569230577#nrr2xv_34">Client Credentials Flow</span>: For machine-to-machine communication where the application accesses resources on its own behalf.</p></li><li class="list-item" id="569230577#nrr2xv_31"><p id="569230577#nrr2xv_35"><span class="control" id="569230577#nrr2xv_36">Device Flow</span>: For devices without browsers (e.g., smart TVs).</p></li><li class="list-item" id="569230577#nrr2xv_32"><p id="569230577#nrr2xv_37"><span class="control" id="569230577#nrr2xv_38">Authorization Code Flow</span>: Default for most web/mobile applications.</p></li></ul><p id="569230577#nrr2xv_12">Client Types:</p><ul class="list" id="569230577#nrr2xv_13" start="1"><li class="list-item" id="569230577#nrr2xv_39"><p id="569230577#nrr2xv_41"><span class="control" id="569230577#nrr2xv_42">Confidential Clients</span>: Can securely store credentials (e.g., backend services).</p></li><li class="list-item" id="569230577#nrr2xv_40"><p id="569230577#nrr2xv_43"><span class="control" id="569230577#nrr2xv_44">Public Clients</span>: Cannot store credentials securely (e.g., single-page apps).</p></li></ul><p id="569230577#nrr2xv_14">Safeguards for public clients:</p><ul class="list" id="569230577#nrr2xv_15" start="1"><li class="list-item" id="569230577#nrr2xv_45"><p id="569230577#nrr2xv_47">Use pre-configured redirect URIs.</p></li><li class="list-item" id="569230577#nrr2xv_46"><p id="569230577#nrr2xv_48">Use <span class="control" id="569230577#nrr2xv_49">PKCE</span> (Proof Key for Code Exchange) to prevent token interception.</p></li></ul><p id="569230577#nrr2xv_16">Tokens:</p><ul class="list" id="569230577#nrr2xv_17" start="1"><li class="list-item" id="569230577#nrr2xv_50"><p id="569230577#nrr2xv_53"><span class="control" id="569230577#nrr2xv_54">Access Token</span>: Short-lived; passed in requests to access resources.</p></li><li class="list-item" id="569230577#nrr2xv_51"><p id="569230577#nrr2xv_55"><span class="control" id="569230577#nrr2xv_56">Refresh Token</span>: Long-lived; allows refreshing access tokens without re-authentication.</p></li><li class="list-item" id="569230577#nrr2xv_52"><p id="569230577#nrr2xv_57"><span class="control" id="569230577#nrr2xv_58">ID Token</span>: JWT containing user identity; unlike opaque OAuth tokens, it is inspectable.</p></li></ul></section><section class="detached"><h2 id="569230577#openid-connect" data-toc="openid-connect#Keycloak.md-openid-connect">OpenID Connect</h2><p id="569230577#nrr2xv_59">OpenID Connect is an authentication layer built on top of OAuth 2.0.</p><p id="569230577#nrr2xv_60">Key Roles:</p><ul class="list" id="569230577#nrr2xv_61" start="1"><li class="list-item" id="569230577#nrr2xv_67"><p id="569230577#nrr2xv_70"><span class="control" id="569230577#nrr2xv_71">End User</span>: The person authenticating.</p></li><li class="list-item" id="569230577#nrr2xv_68"><p id="569230577#nrr2xv_72"><span class="control" id="569230577#nrr2xv_73">Relying Party (RP)</span>: The application requesting user authentication.</p></li><li class="list-item" id="569230577#nrr2xv_69"><p id="569230577#nrr2xv_74"><span class="control" id="569230577#nrr2xv_75">OpenID Provider (OP)</span>: The identity provider (e.g., Keycloak).</p></li></ul><p id="569230577#nrr2xv_62">OpenID Connect Flows:</p><ul class="list" id="569230577#nrr2xv_63" start="1"><li class="list-item" id="569230577#nrr2xv_76"><p id="569230577#nrr2xv_78"><span class="control" id="569230577#nrr2xv_79">Authorization Code Flow</span>: Returns ID token, access token, and refresh token.</p></li><li class="list-item" id="569230577#nrr2xv_77"><p id="569230577#nrr2xv_80"><span class="control" id="569230577#nrr2xv_81">Hybrid Flow</span>: Returns ID token and authorization code immediately.</p></li></ul><p id="569230577#nrr2xv_64">OpenID Connect requires <span class="inline-code" id="569230577#nrr2xv_82">scope=openid</span> to initiate authentication.</p><p id="569230577#nrr2xv_65">Additional Specs:</p><ul class="list" id="569230577#nrr2xv_66" start="1"><li class="list-item" id="569230577#nrr2xv_83"><p id="569230577#nrr2xv_86"><span class="control" id="569230577#nrr2xv_87">Discovery</span>: Dynamic provider configuration.</p></li><li class="list-item" id="569230577#nrr2xv_84"><p id="569230577#nrr2xv_88"><span class="control" id="569230577#nrr2xv_89">Dynamic Registration</span>: Clients can register themselves dynamically.</p></li><li class="list-item" id="569230577#nrr2xv_85"><p id="569230577#nrr2xv_90"><span class="control" id="569230577#nrr2xv_91">Session Management</span>, <span class="control" id="569230577#nrr2xv_92">Front-Channel Logout</span>, <span class="control" id="569230577#nrr2xv_93">Back-Channel Logout</span>: For logout and session lifecycle handling.</p></li></ul></section><section class="detached"><h2 id="569230577#keycloak-overview" data-toc="keycloak-overview#Keycloak.md-keycloak-overview">Keycloak Overview</h2><p id="569230577#nrr2xv_94">Keycloak acts as an identity and authorization server.</p><p id="569230577#nrr2xv_95">Endpoints:</p><ul class="list" id="569230577#nrr2xv_96" start="1"><li class="list-item" id="569230577#nrr2xv_104"><p id="569230577#nrr2xv_107"><span class="control" id="569230577#nrr2xv_108">Frontend</span>: User login, logout, and consent.</p></li><li class="list-item" id="569230577#nrr2xv_105"><p id="569230577#nrr2xv_109"><span class="control" id="569230577#nrr2xv_110">Backend</span>: Token issuance and validation.</p></li><li class="list-item" id="569230577#nrr2xv_106"><p id="569230577#nrr2xv_111"><span class="control" id="569230577#nrr2xv_112">Admin</span>: Realm and client management.</p></li></ul><p id="569230577#nrr2xv_97">Roles:</p><ul class="list" id="569230577#nrr2xv_98" start="1"><li class="list-item" id="569230577#nrr2xv_113"><p id="569230577#nrr2xv_116"><span class="control" id="569230577#nrr2xv_117">Realm Roles</span>: Assigned at realm level (organization-wide).</p></li><li class="list-item" id="569230577#nrr2xv_114"><p id="569230577#nrr2xv_118"><span class="control" id="569230577#nrr2xv_119">Client Roles</span>: Specific to a client.</p></li><li class="list-item" id="569230577#nrr2xv_115"><p id="569230577#nrr2xv_120"><span class="control" id="569230577#nrr2xv_121">Composite Roles</span>: Combine multiple roles.</p></li></ul><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="569230577#nrr2xv_122">Prefer <span class="control" id="569230577#nrr2xv_123">groups</span> over composite roles for assigning multiple roles to users.</p></div>
+</blockquote>
+<p id="569230577#nrr2xv_100">Groups:</p><ul class="list" id="569230577#nrr2xv_101" start="1"><li class="list-item" id="569230577#nrr2xv_124"><p id="569230577#nrr2xv_126">Not included in tokens by default.</p></li><li class="list-item" id="569230577#nrr2xv_125"><p id="569230577#nrr2xv_127">Add a <span class="control" id="569230577#nrr2xv_128">protocol mapper</span> to include group info in tokens.</p></li></ul><p id="569230577#nrr2xv_102">Authorization Services:</p><ul class="list" id="569230577#nrr2xv_103" start="1"><li class="list-item" id="569230577#nrr2xv_129"><p id="569230577#nrr2xv_131">Define policies and resource access rules.</p></li><li class="list-item" id="569230577#nrr2xv_130"><p id="569230577#nrr2xv_132">Manage via Keycloak Admin UI or REST API.</p></li></ul></section><section class="detached"><h2 id="569230577#spring-boot-integration" data-toc="spring-boot-integration#Keycloak.md-spring-boot-integration">Spring Boot Integration</h2><section class="detached"><h3 id="569230577#spring-boot-client-web-app" data-toc="spring-boot-client-web-app#Keycloak.md-spring-boot-client-web-app">Spring Boot Client (Web App)</h3><p id="569230577#nrr2xv_135"><span class="control" id="569230577#nrr2xv_140">Dependencies</span>:</p><div class="detached code-block" id="569230577#nrr2xv_136"><pre><code class="language-markup">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-oauth2-client&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+&lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre></div><p id="569230577#nrr2xv_137"><span class="control" id="569230577#nrr2xv_141">Configuration (<span class="inline-code" id="569230577#nrr2xv_142">application.yaml</span>)</span>:</p><div class="detached code-block" id="569230577#nrr2xv_138"><pre><code class="language-yaml">spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          myfrontend:
+            provider: keycloak
+            client-id: mywebapp
+            client-secret: CLIENT_SECRET
+            authorization-grant-type: authorization_code
+            redirect-uri: &quot;{baseUrl}/login/oauth2/code/&quot;
+            scope: openid
+        provider:
+          keycloak:
+            authorization-uri: http://localhost:8180/auth/realms/myrealm/protocol/openid-connect/auth
+            token-uri: http://localhost:8180/auth/realms/myrealm/protocol/openid-connect/token
+            jwk-set-uri: http://localhost:8180/auth/realms/myrealm/protocol/openid-connect/certs</code></pre></div><p id="569230577#nrr2xv_139">Replace <span class="inline-code" id="569230577#nrr2xv_143">CLIENT_SECRET</span> with the value from Keycloak.</p></section><section class="detached"><h3 id="569230577#spring-boot-resource-server-backend-api" data-toc="spring-boot-resource-server-backend-api#Keycloak.md-spring-boot-resource-server-backend-api">Spring Boot Resource Server (Backend API)</h3><p id="569230577#nrr2xv_144"><span class="control" id="569230577#nrr2xv_152">Dependencies</span>:</p><div class="detached code-block" id="569230577#nrr2xv_145"><pre><code class="language-markup">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-oauth2-resource-server&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+&lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre></div><p id="569230577#nrr2xv_146"><span class="control" id="569230577#nrr2xv_153">Configuration (<span class="inline-code" id="569230577#nrr2xv_154">application.yaml</span>)</span>:</p><div class="detached code-block" id="569230577#nrr2xv_147"><pre><code class="language-yaml">spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/auth/realms/myrealm</code></pre></div><p id="569230577#nrr2xv_148"><span class="control" id="569230577#nrr2xv_155">Get Access Token (Resource Owner Password Flow)</span>:</p><div class="detached code-block" id="569230577#nrr2xv_149"><pre><code class="language-bash">export access_token=$(curl -X POST \
+  http://localhost:8180/auth/realms/myrealm/protocol/openid-connect/token \
+  --user mybackend:CLIENT_SECRET \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -d 'username=alice&amp;password=alice&amp;grant_type=password' \
+  | jq --raw-output '.access_token')</code></pre></div><p id="569230577#nrr2xv_150"><span class="control" id="569230577#nrr2xv_156">Use Token to Access API</span>:</p><div class="detached code-block" id="569230577#nrr2xv_151"><pre><code class="language-bash">curl -X GET http://localhost:8080 \
+  -H &quot;Authorization: Bearer $access_token&quot;</code></pre></div></section></section><section class="detached"><h2 id="569230577#running-keycloak-with-docker" data-toc="running-keycloak-with-docker#Keycloak.md-running-keycloak-with-docker">Running Keycloak with Docker</h2><p id="569230577#nrr2xv_157"><span class="control" id="569230577#nrr2xv_161">Run Keycloak Dev Mode</span>:</p><div class="detached code-block" id="569230577#nrr2xv_158"><pre><code class="language-bash">docker run -p 28080:8080 \
+  -e KEYCLOAK_ADMIN=admin \
+  -e KEYCLOAK_ADMIN_PASSWORD=admin \
+  quay.io/keycloak/keycloak:18.0.0 start-dev</code></pre></div><p id="569230577#nrr2xv_159"><span class="control" id="569230577#nrr2xv_162">Admin Console</span>: http://localhost:28080/admin/ (<a href="http://localhost:28080/admin/">http://localhost:28080/admin/</a>)</p><p id="569230577#nrr2xv_160"><span class="control" id="569230577#nrr2xv_164">Get Started with Docker</span>: https://www.keycloak.org/getting-started/getting-started-docker (<a href="https://www.keycloak.org/getting-started/getting-started-docker">https://www.keycloak.org/getting-started/getting-started-docker</a>)</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="401446718">OpenSSH</h1><p id="401446718#m6g5fc_3">Reference: ssh.com/academy/ssh (<a href="https://www.ssh.com/academy/ssh">https://www.ssh.com/academy/ssh</a>)</p><p id="401446718#m6g5fc_4">OpenSSH is a suite of secure networking tools based on the SSH protocol. It includes both client and server components, and supports secure remote login, file transfer, and tunneling.</p><section class="detached"><h2 id="401446718#key-openssh-tools" data-toc="key-openssh-tools#OpenSSH.md-key-openssh-tools">Key OpenSSH Tools</h2><ul class="list" id="401446718#m6g5fc_11" start="1"><li class="list-item" id="401446718#m6g5fc_12"><p id="401446718#m6g5fc_21"><span class="inline-code" id="401446718#m6g5fc_22">sshd</span>: OpenSSH server daemon.</p></li><li class="list-item" id="401446718#m6g5fc_13"><p id="401446718#m6g5fc_23"><span class="inline-code" id="401446718#m6g5fc_24">ssh</span>: Establishes a secure shell session on a remote system.</p></li><li class="list-item" id="401446718#m6g5fc_14"><p id="401446718#m6g5fc_25"><span class="inline-code" id="401446718#m6g5fc_26">scp</span>: Secure file transfer between local and remote systems.</p></li><li class="list-item" id="401446718#m6g5fc_15"><p id="401446718#m6g5fc_27"><span class="inline-code" id="401446718#m6g5fc_28">ssh-copy-id</span>: Installs your public key on a remote server's <span class="inline-code" id="401446718#m6g5fc_29">authorized_keys</span> file.</p></li><li class="list-item" id="401446718#m6g5fc_16"><p id="401446718#m6g5fc_30"><span class="inline-code" id="401446718#m6g5fc_31">ssh-keyscan</span>: Collects public host keys from remote hosts.</p></li><li class="list-item" id="401446718#m6g5fc_17"><p id="401446718#m6g5fc_32"><span class="inline-code" id="401446718#m6g5fc_33">ssh-keygen</span>: Creates and manages authentication keys.</p></li><li class="list-item" id="401446718#m6g5fc_18"><p id="401446718#m6g5fc_34"><span class="inline-code" id="401446718#m6g5fc_35">ssh-agent</span>: Caches private key passphrases to enable automatic authentication.</p></li><li class="list-item" id="401446718#m6g5fc_19"><p id="401446718#m6g5fc_36"><span class="inline-code" id="401446718#m6g5fc_37">ssh-add</span>: Adds private keys to the <span class="inline-code" id="401446718#m6g5fc_38">ssh-agent</span>.</p></li><li class="list-item" id="401446718#m6g5fc_20"><p id="401446718#m6g5fc_39"><span class="inline-code" id="401446718#m6g5fc_40">sshfs</span>: Mounts a remote filesystem via SSH.</p></li></ul></section><section class="detached"><h2 id="401446718#basic-usage" data-toc="basic-usage#OpenSSH.md-basic-usage">Basic Usage</h2><div class="detached code-block" id="401446718#m6g5fc_41"><pre><code class="language-bash">ssh username@host -p port</code></pre></div></section><section class="detached"><h2 id="401446718#ssh-server-configuration" data-toc="ssh-server-configuration#OpenSSH.md-ssh-server-configuration">SSH Server Configuration</h2><section class="detached"><h3 id="401446718#check-if-ssh-server-is-running" data-toc="check-if-ssh-server-is-running#OpenSSH.md-check-if-ssh-server-is-running">Check if SSH Server is Running</h3><div class="detached code-block" id="401446718#m6g5fc_48"><pre><code class="language-bash">systemctl status sshd</code></pre></div></section><section class="detached"><h3 id="401446718#allow-ssh-port-through-firewall" data-toc="allow-ssh-port-through-firewall#OpenSSH.md-allow-ssh-port-through-firewall">Allow SSH Port Through Firewall</h3><div class="detached code-block" id="401446718#m6g5fc_49"><pre><code class="language-bash">sudo ufw allow 22/tcp</code></pre></div></section><section class="detached"><h3 id="401446718#modify-ssh-daemon-configuration" data-toc="modify-ssh-daemon-configuration#OpenSSH.md-modify-ssh-daemon-configuration">Modify SSH Daemon Configuration</h3><p id="401446718#m6g5fc_50">Edit the file:</p><div class="detached code-block" id="401446718#m6g5fc_51"><pre><code class="language-bash">sudo nano /etc/ssh/sshd_config</code></pre></div><p id="401446718#m6g5fc_52">To reload the configuration:</p><div class="detached code-block" id="401446718#m6g5fc_53"><pre><code class="language-bash">sudo systemctl reload sshd.service</code></pre></div><p id="401446718#m6g5fc_54">Enable strict mode to check file and directory permissions:</p><div class="detached code-block" id="401446718#m6g5fc_55"><pre><code class="language-bash">StrictModes yes</code></pre></div></section><section class="detached"><h3 id="401446718#validate-ssh-configuration" data-toc="validate-ssh-configuration#OpenSSH.md-validate-ssh-configuration">Validate SSH Configuration</h3><div class="detached code-block" id="401446718#m6g5fc_56"><pre><code class="language-bash">sudo sshd -t</code></pre></div><p id="401446718#m6g5fc_57">(Silent if no errors)</p></section><section class="detached"><h3 id="401446718#regenerate-host-keys" data-toc="regenerate-host-keys#OpenSSH.md-regenerate-host-keys">Regenerate Host Keys</h3><div class="detached code-block" id="401446718#m6g5fc_58"><pre><code class="language-bash">sudo rm /etc/ssh/ssh_host*
+sudo ssh-keygen -A
+sudo chmod 400 /etc/ssh/ssh_host*
+sudo chmod 644 /etc/ssh/ssh_host*.pub</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="401446718#m6g5fc_61">SSH host keys should <span class="control" id="401446718#m6g5fc_62">not</span> be password-protected.</p></div>
+</blockquote>
+</section></section><section class="detached"><h2 id="401446718#ssh-client-configuration" data-toc="ssh-client-configuration#OpenSSH.md-ssh-client-configuration">SSH Client Configuration</h2><p id="401446718#m6g5fc_63">Create or edit the file <span class="inline-code" id="401446718#m6g5fc_69">~/.ssh/config</span>:</p><div class="detached code-block" id="401446718#m6g5fc_64"><pre><code class="language-none">Host qwerty
+  Hostname 10.0.0.1
+  User root
+  Port 2222</code></pre></div><p id="401446718#m6g5fc_65">Then connect using:</p><div class="detached code-block" id="401446718#m6g5fc_66"><pre><code class="language-bash">ssh qwerty</code></pre></div><section class="detached"><h3 id="401446718#generate-a-new-key" data-toc="generate-a-new-key#OpenSSH.md-generate-a-new-key">Generate a New Key</h3><div class="detached code-block" id="401446718#m6g5fc_70"><pre><code class="language-bash">ssh-keygen -t ed25519</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="401446718#m6g5fc_72">The <span class="inline-code" id="401446718#m6g5fc_73">ed25519</span> algorithm is preferred over <span class="inline-code" id="401446718#m6g5fc_74">rsa</span> for better security.</p></div>
+</blockquote>
+</section><section class="detached"><h3 id="401446718#send-public-key-to-server" data-toc="send-public-key-to-server#OpenSSH.md-send-public-key-to-server">Send Public Key to Server</h3><div class="detached code-block" id="401446718#m6g5fc_75"><pre><code class="language-bash">ssh-copy-id -i ~/.ssh/id_rsa.pub user@host</code></pre></div><p id="401446718#m6g5fc_76">This adds the public key to the server's <span class="inline-code" id="401446718#m6g5fc_78">~/.ssh/authorized_keys</span>.</p></section></section><section class="detached"><h2 id="401446718#useful-commands" data-toc="useful-commands#OpenSSH.md-useful-commands">Useful Commands</h2><section class="detached"><h3 id="401446718#check-failed-login-attempts" data-toc="check-failed-login-attempts#OpenSSH.md-check-failed-login-attempts">Check Failed Login Attempts</h3><div class="detached code-block" id="401446718#m6g5fc_83"><pre><code class="language-bash">cat /var/log/secure | grep &quot;Failed password for&quot;</code></pre></div></section><section class="detached"><h3 id="401446718#send-file-over-ssh" data-toc="send-file-over-ssh#OpenSSH.md-send-file-over-ssh">Send File Over SSH</h3><div class="detached code-block" id="401446718#m6g5fc_84"><pre><code class="language-bash">scp ~/test.txt user@host:documents</code></pre></div></section><section class="detached"><h3 id="401446718#run-gui-applications-remotely" data-toc="run-gui-applications-remotely#OpenSSH.md-run-gui-applications-remotely">Run GUI Applications Remotely</h3><ol class="list list-decimal" id="401446718#m6g5fc_85" type="1" start="1"><li class="list-item" id="401446718#m6g5fc_87"><p id="401446718#m6g5fc_89">On the server: ensure <span class="inline-code" id="401446718#m6g5fc_90">X11Forwarding yes</span> in <span class="inline-code" id="401446718#m6g5fc_91">/etc/ssh/sshd_config</span>.</p></li><li class="list-item" id="401446718#m6g5fc_88"><p id="401446718#m6g5fc_92">Then run:</p></li></ol><div class="detached code-block" id="401446718#m6g5fc_86"><pre><code class="language-bash">ssh -XC user@remotehost &quot;eclipse&quot;</code></pre></div></section><section class="detached"><h3 id="401446718#run-local-script-on-remote-host" data-toc="run-local-script-on-remote-host#OpenSSH.md-run-local-script-on-remote-host">Run Local Script on Remote Host</h3><div class="detached code-block" id="401446718#m6g5fc_93"><pre><code class="language-bash">ssh user@host 'bash -s' &lt; script.sh</code></pre></div></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="2052348480">Docker</h1><section class="detached"><h2 id="2052348480#docker-engine" data-toc="docker-engine#Docker.md-docker-engine">Docker Engine</h2><p id="2052348480#z6psw50_10">Docker Engine is the runtime that builds and runs Docker containers. It is composed of several key stages:</p><section class="detached"><h3 id="2052348480#build" data-toc="build#Docker.md-build">Build</h3><p id="2052348480#z6psw50_14">Developers create containerized applications by packaging code, dependencies, and environment configurations into read-only <span class="control" id="2052348480#z6psw50_16">Docker images</span>.</p><div class="detached code-block" id="2052348480#z6psw50_15"><pre><code class="language-bash">docker image pull ubuntu:latest</code></pre></div></section><section class="detached"><h3 id="2052348480#ship" data-toc="ship#Docker.md-ship">Ship</h3><p id="2052348480#z6psw50_17">Docker images are stored and shared using Docker registries such as <span class="control" id="2052348480#z6psw50_19">Docker Hub</span> (default public registry).</p><div class="detached code-block" id="2052348480#z6psw50_18"><pre><code class="language-bash">docker search alpine --filter &quot;is-official=true&quot;</code></pre></div></section><section class="detached"><h3 id="2052348480#run" data-toc="run#Docker.md-run">Run</h3><p id="2052348480#z6psw50_20">Docker <span class="control" id="2052348480#z6psw50_23">containers</span> are runtime instances of images.</p><div class="detached code-block" id="2052348480#z6psw50_21"><pre><code class="language-bash">docker container run -it --restart always -p 80:8080 ubuntu:latest /bin/bash
+docker container run -d --name c1 -p 80:8080 web:latest</code></pre></div><section class="detached"><h4 id="2052348480#common-docker-run-options" data-toc="common-docker-run-options#Docker.md-common-docker-run-options">Common docker run options</h4><div class="table-wrapper detached"><table id="2052348480#z6psw50_25"><tr class="header-row" id="2052348480#z6psw50_30"><th id="2052348480#z6psw50_38"><p>Option</p></th><th id="2052348480#z6psw50_39"><p>Purpose</p></th></tr><tr class="" id="2052348480#z6psw50_31"><td id="2052348480#z6psw50_40"><p><span class="inline-code" id="2052348480#z6psw50_42">-t</span></p></td><td id="2052348480#z6psw50_41"><p>Allocate a pseudo-TTY</p></td></tr><tr class="" id="2052348480#z6psw50_32"><td id="2052348480#z6psw50_43"><p><span class="inline-code" id="2052348480#z6psw50_45">-d</span></p></td><td id="2052348480#z6psw50_44"><p>Run container in background</p></td></tr><tr class="" id="2052348480#z6psw50_33"><td id="2052348480#z6psw50_46"><p><span class="inline-code" id="2052348480#z6psw50_48">--name</span></p></td><td id="2052348480#z6psw50_47"><p>Name the container</p></td></tr><tr class="" id="2052348480#z6psw50_34"><td id="2052348480#z6psw50_49"><p><span class="inline-code" id="2052348480#z6psw50_51">--rm</span></p></td><td id="2052348480#z6psw50_50"><p>Remove container after exit</p></td></tr><tr class="" id="2052348480#z6psw50_35"><td id="2052348480#z6psw50_52"><p><span class="inline-code" id="2052348480#z6psw50_54">-p</span></p></td><td id="2052348480#z6psw50_53"><p>Map container port to host</p></td></tr><tr class="" id="2052348480#z6psw50_36"><td id="2052348480#z6psw50_55"><p><span class="inline-code" id="2052348480#z6psw50_57">-e</span></p></td><td id="2052348480#z6psw50_56"><p>Set environment variables</p></td></tr><tr class="" id="2052348480#z6psw50_37"><td id="2052348480#z6psw50_58"><p><span class="inline-code" id="2052348480#z6psw50_60">-m</span></p></td><td id="2052348480#z6psw50_59"><p>Set memory limit</p></td></tr></table></div><div class="detached code-block" id="2052348480#z6psw50_26"><pre><code class="language-bash">docker run --name hello -d --rm hello-java</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="2052348480#z6psw50_61">A container must have a main process to stay alive.</p></div>
+</blockquote>
+<div class="detached code-block" id="2052348480#z6psw50_28"><pre><code class="language-bash">docker container exec -it vigilant_borg bash
+Ctrl+P+Q    # Detach from container shell
+docker container stop vigilant_borg
+docker container rm vigilant_borg
+docker container rm $(docker container ls -aq) -f</code></pre></div></section></section></section><section class="detached"><h2 id="2052348480#dockerfile" data-toc="dockerfile#Docker.md-dockerfile">Dockerfile</h2><p id="2052348480#z6psw50_62">A Dockerfile defines instructions to build an image.</p><div class="detached code-block" id="2052348480#z6psw50_63"><pre><code class="language-none">FROM alpine
+LABEL maintainer=&quot;example@example.com&quot;
+COPY . /src
+WORKDIR /src
+RUN apk add --update nodejs npm
+RUN npm install
+EXPOSE 8080
+ENTRYPOINT [&quot;node&quot;, &quot;app.js&quot;]</code></pre></div><div class="table-wrapper detached"><table id="2052348480#z6psw50_64"><tr class="header-row" id="2052348480#z6psw50_66"><th id="2052348480#z6psw50_77"><p>Command</p></th><th id="2052348480#z6psw50_78"><p>Purpose</p></th></tr><tr class="" id="2052348480#z6psw50_67"><td id="2052348480#z6psw50_79"><p><span class="inline-code" id="2052348480#z6psw50_81">FROM</span></p></td><td id="2052348480#z6psw50_80"><p>Base image</p></td></tr><tr class="" id="2052348480#z6psw50_68"><td id="2052348480#z6psw50_82"><p><span class="inline-code" id="2052348480#z6psw50_84">COPY</span></p></td><td id="2052348480#z6psw50_83"><p>Copy files into image</p></td></tr><tr class="" id="2052348480#z6psw50_69"><td id="2052348480#z6psw50_85"><p><span class="inline-code" id="2052348480#z6psw50_87">ADD</span></p></td><td id="2052348480#z6psw50_86"><p>Like COPY, but supports remote URLs and tar unpacking</p></td></tr><tr class="" id="2052348480#z6psw50_70"><td id="2052348480#z6psw50_88"><p><span class="inline-code" id="2052348480#z6psw50_90">ENV</span></p></td><td id="2052348480#z6psw50_89"><p>Set environment variable</p></td></tr><tr class="" id="2052348480#z6psw50_71"><td id="2052348480#z6psw50_91"><p><span class="inline-code" id="2052348480#z6psw50_93">RUN</span></p></td><td id="2052348480#z6psw50_92"><p>Execute command during build</p></td></tr><tr class="" id="2052348480#z6psw50_72"><td id="2052348480#z6psw50_94"><p><span class="inline-code" id="2052348480#z6psw50_96">CMD</span></p></td><td id="2052348480#z6psw50_95"><p>Default command when running container</p></td></tr><tr class="" id="2052348480#z6psw50_73"><td id="2052348480#z6psw50_97"><p><span class="inline-code" id="2052348480#z6psw50_99">EXPOSE</span></p></td><td id="2052348480#z6psw50_98"><p>Document listening ports</p></td></tr><tr class="" id="2052348480#z6psw50_74"><td id="2052348480#z6psw50_100"><p><span class="inline-code" id="2052348480#z6psw50_102">VOLUME</span></p></td><td id="2052348480#z6psw50_101"><p>Define mount point</p></td></tr><tr class="" id="2052348480#z6psw50_75"><td id="2052348480#z6psw50_103"><p><span class="inline-code" id="2052348480#z6psw50_105">WORKDIR</span></p></td><td id="2052348480#z6psw50_104"><p>Set working directory</p></td></tr><tr class="" id="2052348480#z6psw50_76"><td id="2052348480#z6psw50_106"><p><span class="inline-code" id="2052348480#z6psw50_108">LABEL</span></p></td><td id="2052348480#z6psw50_107"><p>Add metadata</p></td></tr></table></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="2052348480#z6psw50_109">Use <span class="inline-code" id="2052348480#z6psw50_110">.dockerignore</span> to exclude files from build context.</p></div>
+</blockquote>
+</section><section class="detached"><h2 id="2052348480#images-volumes-and-networks" data-toc="images-volumes-and-networks#Docker.md-images-volumes-and-networks">Images, Volumes, and Networks</h2><div class="detached code-block" id="2052348480#z6psw50_111"><pre><code class="language-bash">docker image rm &lt;id&gt;           # Remove image
+docker image prune -a          # Remove all unused images
+docker volume prune            # Remove unused volumes
+docker network ls              # List networks
+docker volume ls               # List volumes</code></pre></div><section class="detached"><h3 id="2052348480#build-and-push-image" data-toc="build-and-push-image#Docker.md-build-and-push-image">Build and Push Image</h3><div class="detached code-block" id="2052348480#z6psw50_113"><pre><code class="language-bash">docker image build -t username/app:latest .
+docker tag &lt;image-id&gt; username/app:latest
+docker login
+docker push username/app:latest</code></pre></div></section></section><section class="detached"><h2 id="2052348480#docker-compose" data-toc="docker-compose#Docker.md-docker-compose">Docker Compose</h2><p id="2052348480#z6psw50_114">Tool for defining and running multi-container applications.</p><p id="2052348480#z6psw50_115"><span class="inline-code" id="2052348480#z6psw50_119">docker-compose.yml</span> example:</p><div class="detached code-block" id="2052348480#z6psw50_116"><pre><code class="language-yaml">version: &quot;3.8&quot;
+services:
+  web:
+    build: .
+    ports:
+      - &quot;5000:5000&quot;
+    volumes:
+      - type: volume
+        source: counter-vol
+        target: /code
+    networks:
+      - counter-net
+
+  redis:
+    image: redis:alpine
+    networks:
+      - counter-net
+
+networks:
+  counter-net:
+
+volumes:
+  counter-vol:</code></pre></div><div class="detached code-block" id="2052348480#z6psw50_117"><pre><code class="language-bash">docker-compose up -d
+docker-compose down
+docker-compose ps
+docker-compose stop
+docker-compose restart
+docker-compose rm</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="2052348480#z6psw50_120">Restart policies: <span class="inline-code" id="2052348480#z6psw50_121">always</span>, <span class="inline-code" id="2052348480#z6psw50_122">unless-stopped</span>, <span class="inline-code" id="2052348480#z6psw50_123">on-failure</span></p></div>
+</blockquote>
+</section><section class="detached"><h2 id="2052348480#kubernetes-overview" data-toc="kubernetes-overview#Docker.md-kubernetes-overview">Kubernetes Overview</h2><p id="2052348480#z6psw50_124">Kubernetes manages containerized applications across clusters of machines.</p><section class="detached"><h3 id="2052348480#concepts" data-toc="concepts#Docker.md-concepts">Concepts</h3><ul class="list" id="2052348480#z6psw50_129" start="1"><li class="list-item" id="2052348480#z6psw50_130"><p id="2052348480#z6psw50_137"><span class="control" id="2052348480#z6psw50_138">Pod</span>: Smallest deployable unit; holds one or more containers.</p></li><li class="list-item" id="2052348480#z6psw50_131"><p id="2052348480#z6psw50_139"><span class="control" id="2052348480#z6psw50_140">Node</span>: A worker machine (VM or physical).</p></li><li class="list-item" id="2052348480#z6psw50_132"><p id="2052348480#z6psw50_141"><span class="control" id="2052348480#z6psw50_142">Cluster</span>: Set of nodes managed by master nodes.</p></li><li class="list-item" id="2052348480#z6psw50_133"><p id="2052348480#z6psw50_143"><span class="control" id="2052348480#z6psw50_144">Service</span>: Abstraction for exposing pods.</p></li><li class="list-item" id="2052348480#z6psw50_134"><p id="2052348480#z6psw50_145"><span class="control" id="2052348480#z6psw50_146">ReplicationController</span>: Ensures a specific number of pod replicas are running.</p></li><li class="list-item" id="2052348480#z6psw50_135"><p id="2052348480#z6psw50_147"><span class="control" id="2052348480#z6psw50_148">Label</span>: Key-value metadata for selection and grouping.</p></li><li class="list-item" id="2052348480#z6psw50_136"><p id="2052348480#z6psw50_149"><span class="control" id="2052348480#z6psw50_150">Kubelet</span>: Agent that runs on each node.</p></li></ul></section><section class="detached"><h3 id="2052348480#pod-definition" data-toc="pod-definition#Docker.md-pod-definition">Pod Definition</h3><div class="detached code-block" id="2052348480#z6psw50_151"><pre><code class="language-yaml">apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: couchbase-pod
+spec:
+  containers:
+    - name: couchbase
+      image: couchbase
+      ports:
+        - containerPort: 8091</code></pre></div></section><section class="detached"><h3 id="2052348480#replicationcontroller" data-toc="replicationcontroller#Docker.md-replicationcontroller">ReplicationController</h3><div class="detached code-block" id="2052348480#z6psw50_152"><pre><code class="language-yaml">apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: couchbase-controller
+spec:
+  replicas: 2
+  selector:
+    app: couchbase-rc-pod
+  template:
+    metadata:
+      labels:
+        app: couchbase-rc-pod
+    spec:
+      containers:
+        - name: couchbase
+          image: couchbase
+          ports:
+            - containerPort: 8091</code></pre></div></section><section class="detached"><h3 id="2052348480#service-definition" data-toc="service-definition#Docker.md-service-definition">Service Definition</h3><div class="detached code-block" id="2052348480#z6psw50_153"><pre><code class="language-yaml">apiVersion: v1
+kind: Service
+metadata:
+  name: couchbase-service
+  labels:
+    app: couchbase-service-pod
+spec:
+  ports:
+    - port: 8091
+  selector:
+    app: couchbase-rc-pod</code></pre></div></section></section><section class="detached"><h2 id="2052348480#mern-stack-with-docker" data-toc="mern-stack-with-docker#Docker.md-mern-stack-with-docker">MERN Stack with Docker</h2><p id="2052348480#z6psw50_154">Example to run MongoDB:</p><div class="detached code-block" id="2052348480#z6psw50_155"><pre><code class="language-bash">docker run -d -p 27017-27019:27017-27019 --name mongodb-service mongo:4.0.4</code></pre></div><p id="2052348480#z6psw50_156">Project structure:</p><ul class="list" id="2052348480#z6psw50_157" start="1"><li class="list-item" id="2052348480#z6psw50_158"><p id="2052348480#z6psw50_161"><span class="inline-code" id="2052348480#z6psw50_162">server</span>: Node.js (Express + Socket.IO)</p></li><li class="list-item" id="2052348480#z6psw50_159"><p id="2052348480#z6psw50_163"><span class="inline-code" id="2052348480#z6psw50_164">client</span>: React app</p></li><li class="list-item" id="2052348480#z6psw50_160"><p id="2052348480#z6psw50_165"><span class="inline-code" id="2052348480#z6psw50_166">worker</span>: Libraries or background jobs</p></li></ul></section><section class="detached"><h2 id="2052348480#resources" data-toc="resources#Docker.md-resources">Resources</h2><ul class="list" id="2052348480#z6psw50_167" start="1"><li class="list-item" id="2052348480#z6psw50_168"><p id="2052348480#z6psw50_172">Play with Docker (<a href="https://labs.play-with-docker.com/">https://labs.play-with-docker.com/</a>)</p></li><li class="list-item" id="2052348480#z6psw50_169"><p id="2052348480#z6psw50_174">Dockerfile Best Practices (<a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/">https://docs.docker.com/develop/develop-images/dockerfile_best-practices/</a>)</p></li><li class="list-item" id="2052348480#z6psw50_170"><p id="2052348480#z6psw50_176">Dockerfile Reference (<a href="https://docs.docker.com/engine/reference/builder/">https://docs.docker.com/engine/reference/builder/</a>)</p></li><li class="list-item" id="2052348480#z6psw50_171"><p id="2052348480#z6psw50_178">Alpine Docker Image (<a href="https://hub.docker.com/_/alpine/">https://hub.docker.com/_/alpine/</a>)</p></li></ul></section></article></div></section></div></body></html>
